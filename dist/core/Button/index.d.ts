@@ -1,7 +1,7 @@
-import { MouseEvent } from 'react';
+import { MouseEvent, ReactNode } from 'react';
 declare type ButtonProps = {
-    label: string;
-    onClick: (event: MouseEvent<HTMLButtonElement>) => {};
+    children: ReactNode;
+    onClick: (event?: MouseEvent<HTMLButtonElement>) => void;
 };
 declare const Button: (props: ButtonProps) => JSX.Element;
 export default Button;

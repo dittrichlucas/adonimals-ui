@@ -1,13 +1,13 @@
-import React, { MouseEvent } from 'react'
+import React, { MouseEvent, ReactNode } from 'react'
 
 type ButtonProps = {
-    label: string
-    onClick: (event: MouseEvent<HTMLButtonElement>) => {}
+    children: ReactNode
+    onClick: (event?: MouseEvent<HTMLButtonElement>) => void
 }
 
 const Button = (props: ButtonProps) =>
     <button onClick={props.onClick}>
-        {props.label}
+        {props.children}
     </button>
 
 export default Button
