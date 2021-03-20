@@ -1,12 +1,18 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react'
+import React, { PropsWithChildren } from 'react'
+import { StyledButton } from './styles'
 
-type ButtonProps = {
-    children: ReactNode
-} & ButtonHTMLAttributes<HTMLButtonElement>
+export type ButtonProps = PropsWithChildren<{
+    variant?: 'primary' | 'secondary'
+    disabled: boolean
+}>
 
-const Button = ({ children, ...otherProps }: ButtonProps) =>
-    <button {...otherProps}>
-        {children}
-    </button>
+const Button = (props: ButtonProps) => {
+    const { children, ...other } = props
+
+    return (
+        <StyledButton {...other}>{children}</StyledButton>
+    )
+}
+
 
 export default Button
