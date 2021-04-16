@@ -7,32 +7,32 @@ export default {
     title: 'Example/Button',
     component: Button,
     argTypes: {
-        backgroundColor: { control: 'color' },
-    },
+        variant: {
+            control: {
+                type: 'select',
+                options: ['contained', 'outlined', 'text']
+            },
+        },
+        size: {
+            control: {
+                type: 'select',
+                options: ['small', 'medium', 'large']
+            },
+        },
+        backgroundColor: { control: 'color' }
+    }
 } as Meta
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />
+const TemplateRow: Story<ButtonProps> = (args) => (
+    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Button {...args} size='small'>Button</Button>
+        <Button {...args} size='medium'>Button</Button>
+        <Button {...args} size='large'>Button</Button>
+    </div>
+)
 
-export const Primary = Template.bind({})
-Primary.args = {
+export const Default = TemplateRow.bind({})
+Default.args = {
     children: 'Button',
-    variant: 'primary'
+    variant: 'outlined',
 }
-
-export const Secondary = Template.bind({})
-Secondary.args = {
-    children: 'Button',
-    variant: 'secondary'
-}
-
-// export const Large = Template.bind({})
-// Large.args = {
-//     // size: 'large',
-//     children: 'Button',
-// }
-
-// export const Small = Template.bind({})
-// Small.args = {
-//     // size: 'small',
-//     children: 'Button',
-// }
