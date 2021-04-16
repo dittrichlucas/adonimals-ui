@@ -1,13 +1,14 @@
-import React, { MouseEvent } from 'react'
+import React, { PropsWithChildren } from 'react'
+import { StyledButton, StyledButtonProps } from './styles'
 
-type ButtonProps = {
-    label: string
-    onClick: (event: MouseEvent<HTMLButtonElement>) => {}
+export type ButtonProps = PropsWithChildren<StyledButtonProps>
+
+const Button = (props: ButtonProps) => {
+    const { children, ...other } = props
+
+    return (
+        <StyledButton {...other}>{children}</StyledButton>
+    )
 }
-
-const Button = (props: ButtonProps) =>
-    <button onClick={props.onClick}>
-        {props.label}
-    </button>
 
 export default Button
