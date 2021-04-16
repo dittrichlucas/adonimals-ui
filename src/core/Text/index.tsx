@@ -1,16 +1,16 @@
 import React, { PropsWithChildren } from 'react'
-import { HeadingProps, titleMap, defaultElement } from './style'
+import { BaseTextProps, defaultElement, textMap } from './style'
 
-export type TitleProps = PropsWithChildren<HeadingProps>
+export type TextProps = PropsWithChildren<BaseTextProps>
 
-const Title = (props: TitleProps) => {
+const Text = (props: TextProps) => {
     const { children, element, variant, ...other } = props
     const elementType = element || defaultElement[variant]
-    const Component = titleMap[elementType]
+    const Component = textMap[elementType]
 
     return (
         <Component variant={variant} {...other}>{children}</Component>
     )
 }
 
-export default Title
+export default Text

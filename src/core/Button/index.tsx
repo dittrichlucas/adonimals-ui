@@ -1,10 +1,7 @@
 import React, { PropsWithChildren } from 'react'
-import { StyledButton } from './styles'
+import { StyledButton, StyledButtonProps } from './styles'
 
-export type ButtonProps = PropsWithChildren<{
-    variant?: 'primary' | 'secondary'
-    disabled: boolean
-}>
+export type ButtonProps = PropsWithChildren<StyledButtonProps>
 
 const Button = (props: ButtonProps) => {
     const { children, ...other } = props
@@ -13,6 +10,5 @@ const Button = (props: ButtonProps) => {
         <StyledButton {...other}>{children}</StyledButton>
     )
 }
-
 
 export default Button
