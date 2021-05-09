@@ -12,7 +12,7 @@ const defaultTheme = {
         'spacing-lg': 40,
         'spacing-xl': 48,
         'spacing-xxl': 56,
-        'spacing-xxxl': 64,
+        'spacing-xxxl': 64
     },
     fontSizes: {
         64: '64px',
@@ -23,7 +23,7 @@ const defaultTheme = {
         24: '24px',
         20: '20px',
         16: '16px',
-        12: '12px',
+        12: '12px'
     },
     lineHeights: {
         72: '72px',
@@ -44,7 +44,7 @@ const defaultTheme = {
         12: 12,
         16: 16,
         24: 24,
-        40: 40,
+        40: 40
     },
     colors: {
         contrastColor: '#5f6a87',

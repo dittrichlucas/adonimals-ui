@@ -37,23 +37,7 @@ export type StyledButtonProps =
         backgroundColor: string
     }
 
-// TODO: remove when using design tokens
-const getSize = (size: ButtonSize, theme: DefaultTheme) => {
-    switch (size) {
-        case 'small':
-            return [theme.space['spacing-xs'], theme.space['spacing-lg']]
-        case 'medium':
-            return [theme.space['spacing-sm'], theme.space['spacing-xxl']]
-        default:
-            return [theme.space['spacing-md'], theme.space['spacing-xxxl']]
-    }
-}
-
 export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...props }) => ({
-    paddingTop: getSize(props.size, theme)[0],
-    paddingBottom: getSize(props.size, theme)[0],
-    paddingLeft: getSize(props.size, theme)[1],
-    paddingRight: getSize(props.size, theme)[1],
     fontFamily: theme.fonts.fontFamily,
     borderRadius: '5px',
     fontSize: theme.fontSizes[16],
@@ -61,8 +45,31 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
     cursor: 'pointer',
     borderWidth: theme.radii[2],
     borderStyle: 'solid',
-    ...size(props),
-    ...space(props),
+    ...size({ theme, ...props }),
+    ...space({ theme, ...props }),
+    ...variant({
+        prop: 'size',
+        variants: {
+            small: {
+                paddingTop: theme.space['spacing-xs'],
+                paddingBottom: theme.space['spacing-xs'],
+                paddingLeft: theme.space['spacing-lg'],
+                paddingRight: theme.space['spacing-lg'],
+            },
+            medium: {
+                paddingTop: theme.space['spacing-sm'],
+                paddingBottom: theme.space['spacing-sm'],
+                paddingLeft: theme.space['spacing-xxl'],
+                paddingRight: theme.space['spacing-xxl'],
+            },
+            large: {
+                paddingTop: theme.space['spacing-md'],
+                paddingBottom: theme.space['spacing-md'],
+                paddingLeft: theme.space['spacing-xxxl'],
+                paddingRight: theme.space['spacing-xxxl'],
+            }
+        }
+    })({ theme, ...props }),
     ...variant({
         variants: {
             contained: {
@@ -84,5 +91,5 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
                 borderColor: theme.colors.secondary['080']
             }
         }
-    })(props),
+    })({ theme, ...props }),
 }))

@@ -11,15 +11,14 @@ export default {
             control: {
                 type: 'select',
                 options: ['contained', 'outlined', 'text']
-            },
+            }
         },
         size: {
             control: {
                 type: 'select',
                 options: ['small', 'medium', 'large']
-            },
-        },
-        backgroundColor: { control: 'color' }
+            }
+        }
     }
 } as Meta
 
@@ -34,5 +33,5 @@ const TemplateRow: Story<ButtonProps> = (args) => (
 export const Default = TemplateRow.bind({})
 Default.args = {
     children: 'Button',
-    variant: 'outlined',
+    variant: 'outlined'
 }

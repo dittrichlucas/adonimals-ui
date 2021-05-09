@@ -11,13 +11,13 @@ export default {
             control: {
                 type: 'select',
                 options: ['heading1', 'heading2', 'heading3', 'heading4', 'heading5', 'heading6']
-            },
+            }
         },
         element: {
             control: {
                 type: 'select',
                 options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-            },
+            }
         }
     }
 } as Meta

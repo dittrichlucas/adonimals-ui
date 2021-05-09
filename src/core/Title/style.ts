@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { variant, space, SpaceProps } from 'styled-system'
+import { variant, space, SpaceProps, color } from 'styled-system'
 import "@fontsource/fira-sans/400.css"
-import { themeGet } from '@styled-system/theme-get'
 
 export type HeadingProps = {
     variant: TitleVariants,
@@ -27,7 +26,8 @@ export type TitleVariants =
 const createTitle = (element: TitleElements) => styled(element)<HeadingProps>(({ theme, ...props }) => ({
     fontFamily: theme.fonts.fontFamily,
     color: theme.colors.greyscale['000'],
-    ...space(props),
+    ...space({ theme, ...props }),
+    ...color({ theme, ...props }),
     ...variant({
         variants: {
             heading1: {
@@ -55,15 +55,15 @@ const createTitle = (element: TitleElements) => styled(element)<HeadingProps>(({
                 lineHeight: theme.lineHeights[32],
             }
         }
-    })(props)
+    })({ theme, ...props })
 }))
 
-const Heading1 = createTitle('h1') // styled('h1')(...)
-const Heading2 = createTitle('h2') // styled('h2')(...)
-const Heading3 = createTitle('h3') // styled('h3')(...)
-const Heading4 = createTitle('h4') // styled('h4')(...)
-const Heading5 = createTitle('h5') // styled('h5')(...)
-const Heading6 = createTitle('h6') // styled('h6')(...)
+const Heading1 = createTitle('h1')
+const Heading2 = createTitle('h2')
+const Heading3 = createTitle('h3')
+const Heading4 = createTitle('h4')
+const Heading5 = createTitle('h5')
+const Heading6 = createTitle('h6')
 
 export const defaultElement: { [k in TitleVariants]: TitleElements } = {
     heading1: 'h1',

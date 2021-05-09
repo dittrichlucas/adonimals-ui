@@ -11,13 +11,13 @@ export default {
             control: {
                 type: 'select',
                 options: ['large', 'medium', 'small']
-            },
+            }
         },
         element: {
             control: {
                 type: 'select',
                 options: ['caption', 'label', 'p', 'span']
-            },
+            }
         }
     }
 } as Meta

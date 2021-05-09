@@ -25,8 +25,8 @@ type TextVariants =
 const createText = (element: TextElements) => styled(element)<BaseTextProps>(({ theme, ...props }) => ({
     fontFamily: theme.fonts.fontFamily,
     color: theme.colors.greyscale['000'],
-    ...space(props),
-    ...color(props),
+    ...space({ theme, ...props }),
+    ...color({ theme, ...props }),
     ...variant({
         variants: {
             large: {
@@ -42,7 +42,7 @@ const createText = (element: TextElements) => styled(element)<BaseTextProps>(({ 
                 lineHeight: theme.lineHeights[16]
             }
         }
-    })(props)
+    })({ theme, ...props })
 }))
 
 const Caption = createText('caption')
