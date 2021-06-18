@@ -7,7 +7,7 @@ import {
     SizeProps,
     size,
 } from 'styled-system'
-import "@fontsource/fira-sans/400.css"
+// import "@fontsource/fira-sans/400.css"
 
 type ButtonVariants =
     | 'contained'

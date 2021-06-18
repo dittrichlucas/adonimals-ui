@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { variant, space, SpaceProps, color } from 'styled-system'
-import "@fontsource/fira-sans/400.css"
 
 export type HeadingProps = {
     variant: TitleVariants,
