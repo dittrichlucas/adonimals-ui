@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { themeGet } from '@styled-system/theme-get'
 import { color, ColorProps, space, SpaceProps, variant } from 'styled-system'
 
 export type BaseTextProps =
