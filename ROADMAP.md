@@ -99,4 +99,5 @@
 - [Outras props além do render](https://pt-br.reactjs.org/docs/render-props.html#using-props-other-than-render)
 - [Forms](https://pt-br.reactjs.org/docs/forms.html)
 - [Acessibilidade](https://pt-br.reactjs.org/docs/accessibility.html#labeling)
+- [Boas práticas de testes](https://willianjusten.com.br/erros-comuns-com-o-react-testing-library)
 - [Design patterns](https://refactoring.guru/pt-br/design-patterns)
