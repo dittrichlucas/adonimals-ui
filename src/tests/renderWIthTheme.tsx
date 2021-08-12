@@ -3,8 +3,7 @@ import { render } from '@testing-library/react'
 import { ThemeProvider } from '../'
 import defaultTheme from '../theme/defaultTheme'
 
-
-// screen
+// TODO: Usar screen ao invés de render
 export const renderWithTheme = (children: React.ReactElement) => {
   return render(
     <ThemeProvider theme={defaultTheme}>

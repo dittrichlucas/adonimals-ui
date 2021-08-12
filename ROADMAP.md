@@ -12,33 +12,80 @@
 - [ ] Definir logo
 - [x] Definir componentes da primeira release
 - [ ] Criar componentes
+    - [ ] Autocomplete
+    - [ ] Avatar
+    - [x] Box
     - [x] Button
+    - [ ] Carrousel
+    - [ ] Checkbox
+    - [ ] Form
+    - [ ] IconButton
+    - [ ] Menu
+    - [ ] Radio
+    - [ ] RadioGroup
+    - [ ] Select
+    - [ ] Slider
     - [x] Text
+    - [x] TextField
     - [x] Title
 - [x] Configurar design tokens
 - [x] Definir família de fonte
 - [x] Definir paleta de cores
 - [x] Definir tema
 - [ ] Criar _story_ para todos os componentes
+    - [ ] Autocomplete
+    - [ ] Avatar
+    - [x] Box
     - [x] Button
+    - [ ] Carrousel
+    - [ ] Checkbox
+    - [ ] Form
+    - [ ] IconButton
+    - [ ] Menu
+    - [ ] Radio
+    - [ ] RadioGroup
+    - [ ] Select
+    - [ ] Slider
     - [x] Text
+    - [x] TextField
     - [x] Title
 - [ ] Adicionar teste para todos os componentes
+    - [ ] Autocomplete
+    - [ ] Avatar
+    - [ ] Box
     - [x] Button
+    - [ ] Carrousel
+    - [ ] Checkbox
+    - [ ] Form
+    - [ ] IconButton
+    - [ ] Menu
+    - [ ] Radio
+    - [ ] RadioGroup
+    - [ ] Select
+    - [ ] Slider
     - [x] Text
+    - [ ] TextField
     - [x] Title
 - [] Criar protótipos no figma
+    - [ ] Autocomplete
+    - [ ] Avatar
+    - [ ] Box
     - [x] Button
+    - [ ] Carrousel
+    - [ ] Checkbox
+    - [ ] Form
+    - [ ] IconButton
+    - [ ] Menu
+    - [ ] Radio
+    - [ ] RadioGroup
+    - [ ] Select
+    - [ ] Slider
     - [x] Text
+    - [ ] TextField
     - [x] Title
 
 ### Improvements
-- [x] Refatorar componentes existentes
 - [ ] Traduzir documentação para inglês
-- [ ] Adicionar variantes
-    - [x] Button (variant, size e color)
-    - [x] Text (size)
-    - [x] Title (heading)
 - [ ] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
 
 ### Links úteis
@@ -47,3 +94,9 @@
 - [Advanced (styled-system)](https://styled-components.com/docs/advanced)
 - [Buttons example](https://material-ui.com/components/buttons/):
 - [Context react](https://pt-br.reactjs.org/docs/context.html#when-to-use-context)
+- [Props com valor padrão](https://pt-br.reactjs.org/docs/jsx-in-depth.html#props-default-to-true)
+- [Render props](https://pt-br.reactjs.org/docs/render-props.html)
+- [Outras props além do render](https://pt-br.reactjs.org/docs/render-props.html#using-props-other-than-render)
+- [Forms](https://pt-br.reactjs.org/docs/forms.html)
+- [Acessibilidade](https://pt-br.reactjs.org/docs/accessibility.html#labeling)
+- [Design patterns](https://refactoring.guru/pt-br/design-patterns)
