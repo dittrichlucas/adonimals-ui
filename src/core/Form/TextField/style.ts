@@ -21,6 +21,7 @@ export type StyledTextFieldProps =
     & SpaceProps
     & SizeProps
     & {
+        id?: string
         variant: TextFieldVariants
         color: TextFieldColor
         value?: string
