@@ -13,10 +13,34 @@ export default {
                 options: ['row', 'row-reverse', 'column', 'column-reverse']
             }
         },
+        flexWrap: {
+            control: {
+                type: 'select',
+                options: ['no-wrap', 'wrap', 'wrap-reverse']
+            }
+        },
         alignItems: {
             control: {
                 type: 'select',
                 options: ['stretch', 'flex-start', 'flex-end', 'center', 'baseline', 'first baseline', 'last baseline', 'start', 'end', 'self-start', 'self-end']
+            }
+        },
+        alignContent: {
+            control: {
+                type: 'select',
+                options: ['stretch', 'flex-start', 'flex-end', 'center', 'baseline', 'first baseline', 'last baseline', 'start', 'end', 'space-between', 'space-around', 'space-evenly']
+            }
+        },
+        alignSelf: {
+            control: {
+                type: 'select',
+                options: ['auto', 'stretch', 'flex-start', 'flex-end', 'center', 'baseline']
+            }
+        },
+        justifyContent: {
+            control: {
+                type: 'select',
+                options: ['stretch', 'flex-start', 'flex-end', 'center', 'start', 'end', 'left', 'right', 'space-between', 'space-around', 'space-evenly']
             }
         },
     }
