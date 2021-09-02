@@ -47,3 +47,8 @@
 - [Advanced (styled-system)](https://styled-components.com/docs/advanced)
 - [Buttons example](https://material-ui.com/components/buttons/):
 - [Context react](https://pt-br.reactjs.org/docs/context.html#when-to-use-context)
+
+
+- Finalizar testes
+- Buscar inspirações de mktplace
+- Tipos de inputs para formulários (olhar libs de ui como material e outras)
