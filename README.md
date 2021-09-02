@@ -55,8 +55,11 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 -->
 ## Components
 
+- [x] Box
 - [x] Button
+- [x] Checkbox
 - [x] Text
+- [x] TextField
 - [x] Title
 
 ## Next Components
