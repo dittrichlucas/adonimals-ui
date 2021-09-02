@@ -17,7 +17,7 @@
     - [x] Box
     - [x] Button
     - [ ] Carrousel
-    - [ ] Checkbox
+    - [x] Checkbox
     - [ ] Form
     - [ ] IconButton
     - [ ] Menu
@@ -38,7 +38,7 @@
     - [x] Box
     - [x] Button
     - [ ] Carrousel
-    - [ ] Checkbox
+    - [x] Checkbox
     - [ ] Form
     - [ ] IconButton
     - [ ] Menu
@@ -52,10 +52,10 @@
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
     - [ ] Avatar
-    - [ ] Box
+    - [x] Box
     - [x] Button
     - [ ] Carrousel
-    - [ ] Checkbox
+    - [x] Checkbox
     - [ ] Form
     - [ ] IconButton
     - [ ] Menu
@@ -64,7 +64,7 @@
     - [ ] Select
     - [ ] Slider
     - [x] Text
-    - [ ] TextField
+    - [x] TextField
     - [x] Title
 - [] Criar protótipos no figma
     - [ ] Autocomplete
@@ -87,6 +87,10 @@
 ### Improvements
 - [ ] Traduzir documentação para inglês
 - [ ] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
+- [ ] Melhorias do storybook
+    - [ ] Adicionar logo
+    - [ ] Utilizar fontes escolhidas para o projeto
+    - [ ] Utilizar o tema do projeto
 
 ### Links úteis
 - [Color (styled-system)](https://styled-system.com/table/#color)
