@@ -1,5 +1,5 @@
 import React from 'react'
-import { renderWithTheme } from '../../tests/renderWIthTheme'
+import { renderWithTheme } from '../../tests/renderWithTheme'
 import Title from '.'
 import { screen } from '@testing-library/react'
 

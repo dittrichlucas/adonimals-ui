@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/dom'
 import React from 'react'
 import Text from '.'
-import { renderWithTheme } from '../../tests/renderWIthTheme'
+import { renderWithTheme } from '../../tests/renderWithTheme'
 
 describe('', () => {
     test('', () => {
