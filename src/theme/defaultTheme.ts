@@ -1,3 +1,5 @@
+// import "@fontsource/fira-sans/400.css"
+
 const defaultTheme = {
     name: 'Default theme',
     fonts: {
