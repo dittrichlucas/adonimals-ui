@@ -11,6 +11,7 @@ type TextFieldProps = PropsWithChildren<StyledTextFieldProps>
 
 const TextField = (props: TextFieldProps) => {
     const {
+        id,
         value,
         type,
         onChange,
@@ -26,12 +27,13 @@ const TextField = (props: TextFieldProps) => {
 
     return (
         <StyledBox display='flex' flexDirection='column' {...props}>
-            <Text color='inherit' variant='medium' element='label'>
+            <Text color='inherit' variant='medium' element='label' htmlFor={ id }>
                 {label}
             </Text>
             <Box display='flex' flexDirection='row' py='spacing-xxxs' alignItems='center'>
                 {prefix}
                 <StyledTextField
+                    id={ id }
                     value={ value }
                     type={ type }
                     onChange={ onChange }
