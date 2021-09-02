@@ -1,3 +1,4 @@
+import { LabelHTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { color, ColorProps, space, SpaceProps, variant } from 'styled-system'
 
@@ -8,6 +9,7 @@ export type BaseTextProps =
         variant: TextVariants,
         element?: TextElements,
         color: string
+        htmlFor?: LabelHTMLAttributes<HTMLLabelElement>['htmlFor']
     }
 
 type TextElements =
