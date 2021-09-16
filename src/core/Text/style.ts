@@ -8,7 +8,7 @@ export type BaseTextProps =
     & {
         variant: TextVariants,
         element?: TextElements,
-        color: string
+        color?: string
         htmlFor?: LabelHTMLAttributes<HTMLLabelElement>['htmlFor']
     }
 
