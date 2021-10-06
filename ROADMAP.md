@@ -13,7 +13,7 @@
 - [x] Definir componentes da primeira release
 - [ ] Criar componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
@@ -34,7 +34,7 @@
 - [x] Definir tema
 - [ ] Criar _story_ para todos os componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
@@ -51,7 +51,7 @@
     - [x] Title
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
