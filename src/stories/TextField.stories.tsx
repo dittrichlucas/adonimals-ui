@@ -23,14 +23,13 @@ export default {
     }
 } as Meta
 
-const Template: Story<StyledTextFieldProps> = (args) => <TextField {...args} />
+const Template: Story<StyledTextFieldProps> = args => <TextField { ...args } />
 
 export const Input = Template.bind({})
 Input.args = {
     value: '',
     color: 'primary',
     type: 'text',
-    onChange: () => {},
     placeholder: 'Email',
-    variant: 'outlined',
+    variant: 'outlined'
 }

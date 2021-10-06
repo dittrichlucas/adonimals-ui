@@ -3,11 +3,11 @@ import { StyledButton, StyledButtonProps } from './styles'
 
 export type ButtonProps = PropsWithChildren<StyledButtonProps>
 
-const Button = (props: ButtonProps) => {
+const Button = (props: ButtonProps): JSX.Element => {
     const { children, ...other } = props
 
     return (
-        <StyledButton {...other}>{children}</StyledButton>
+        <StyledButton { ...other }>{ children }</StyledButton>
     )
 }
 

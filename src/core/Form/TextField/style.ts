@@ -17,18 +17,22 @@ type TextFieldColor =
     | 'primary'
     | 'secondary'
 
-export type StyledTextFieldProps =
-    & SpaceProps
+export type StyledBoxProps = SpaceProps
     & SizeProps
     & {
-        id?: string
-        variant: TextFieldVariants
         color: TextFieldColor
-        value?: string
+        error?: boolean
         disabled?: boolean
+        variant: TextFieldVariants
+    }
+
+export type StyledTextFieldProps =
+    & StyledBoxProps
+    & {
+        id?: string
+        value?: string
         type?: 'text' | 'number' | 'password'
         required?: boolean
-        error?: boolean
         placeholder: string
         prefix?: ReactNode
         suffix?: ReactNode
@@ -36,7 +40,7 @@ export type StyledTextFieldProps =
         onChange?: (event: ChangeEvent<HTMLInputElement>) => void
     }
 
-export const colorUnion = (props: StyledTextFieldProps) => {
+export const colorUnion = (props: StyledBoxProps): 'error' | 'disabled' | TextFieldColor => {
     if (props.error) {
         return 'error'
     }
@@ -48,7 +52,7 @@ export const colorUnion = (props: StyledTextFieldProps) => {
     return props.color
 }
 
-export const StyledBox = styled(Box)<StyledTextFieldProps>(({ theme, ...props }) => ({
+export const StyledBox = styled(Box)<StyledBoxProps>(({ theme, ...props }) => ({
     padding: theme.space['spacing-xxs'],
     paddingLeft: theme.space['spacing-xs'],
     paddingRight: theme.space['spacing-xs'],
@@ -59,23 +63,23 @@ export const StyledBox = styled(Box)<StyledTextFieldProps>(({ theme, ...props })
         variants: {
             error: {
                 color: theme.colors.feedback.error['120'],
-                borderColor: theme.colors.feedback.error['120'],
+                borderColor: theme.colors.feedback.error['120']
             },
             disabled: {
                 color: theme.colors.greyscale['050'],
-                borderColor: theme.colors.greyscale['050'],
+                borderColor: theme.colors.greyscale['050']
             },
             default: {
                 color: theme.colors.greyscale['000'],
-                borderColor: theme.colors.greyscale['025'],
+                borderColor: theme.colors.greyscale['025']
             },
             primary: {
                 color: theme.colors.primary['120'],
-                borderColor: theme.colors.primary['120'],
+                borderColor: theme.colors.primary['120']
             },
             secondary: {
                 color: theme.colors.secondary['120'],
-                borderColor: theme.colors.secondary['120'],
+                borderColor: theme.colors.secondary['120']
             }
         }
     })({ theme, ...props, color: colorUnion(props) }),
@@ -84,19 +88,19 @@ export const StyledBox = styled(Box)<StyledTextFieldProps>(({ theme, ...props })
             outlined: {
                 backgroundColor: 'transparent',
                 borderWidth: theme.radii[2],
-                borderStyle: 'solid',
+                borderStyle: 'solid'
             },
             text: {
                 borderWidth: theme.radii[0],
                 backgroundColor: theme.colors.greyscale['075'],
                 borderBottomWidth: theme.radii[2],
-                borderStyle: 'solid',
+                borderStyle: 'solid'
             }
         }
-    })({ theme, ...props }),
+    })({ theme, ...props })
 }))
 
-export const StyledTextField = styled('input')<StyledTextFieldProps>(({ theme, ...props }) => ({
+export const StyledTextField = styled('input')<StyledTextFieldProps>(({ theme }) => ({
     fontFamily: theme.fonts.fontFamily,
     borderRadius: '5px',
     fontSize: theme.fontSizes[16],

@@ -22,11 +22,11 @@ export default {
     }
 } as Meta
 
-const TemplateRow: Story<ButtonProps> = (args) => (
-    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Button {...args} size='small'>Button</Button>
-        <Button {...args} size='medium'>Button</Button>
-        <Button {...args} size='large'>Button</Button>
+const TemplateRow: Story<ButtonProps> = args => (
+    <div style={ { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' } }>
+        <Button { ...args } size='small'>Button</Button>
+        <Button { ...args } size='medium'>Button</Button>
+        <Button { ...args } size='large'>Button</Button>
     </div>
 )
 

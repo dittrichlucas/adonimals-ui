@@ -11,8 +11,7 @@ describe('', () => {
             size='medium'
             backgroundColor='#000'
             color='primary'
-            disabled={false}
-        >Button
+            disabled={ false }>Button
         </Button>)
         const test = screen.getByRole('button', { name: 'Button' })
 

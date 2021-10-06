@@ -9,7 +9,7 @@ import Box from '../../Box'
 
 type TextFieldProps = PropsWithChildren<StyledTextFieldProps>
 
-const TextField = (props: TextFieldProps) => {
+const TextField = (props: TextFieldProps): JSX.Element => {
     const {
         id,
         value,
@@ -26,12 +26,12 @@ const TextField = (props: TextFieldProps) => {
     } = props
 
     return (
-        <StyledBox display='flex' flexDirection='column' {...props}>
+        <StyledBox display='flex' flexDirection='column' { ...props }>
             <Text color='inherit' variant='medium' element='label' htmlFor={ id }>
-                {label}
+                { label }
             </Text>
             <Box display='flex' flexDirection='row' py='spacing-xxxs' alignItems='center'>
-                {prefix}
+                { prefix }
                 <StyledTextField
                     id={ id }
                     value={ value }
@@ -40,10 +40,10 @@ const TextField = (props: TextFieldProps) => {
                     placeholder={ placeholder }
                     disabled={ disabled }
                     variant= { variant }
-                    color={color}
-                    error={error}
+                    color={ color }
+                    error={ error }
                 />
-                {suffix}
+                { suffix }
             </Box>
         </StyledBox>
     )

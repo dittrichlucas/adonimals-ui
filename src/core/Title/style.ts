@@ -31,27 +31,27 @@ const createTitle = (element: TitleElements) => styled(element)<HeadingProps>(({
         variants: {
             heading1: {
                 fontSize: theme.fontSizes[64],
-                lineHeight: theme.lineHeights[72],
+                lineHeight: theme.lineHeights[72]
             },
             heading2: {
                 fontSize: theme.fontSizes[56],
-                lineHeight: theme.lineHeights[64],
+                lineHeight: theme.lineHeights[64]
             },
             heading3: {
                 fontSize: theme.fontSizes[48],
-                lineHeight: theme.lineHeights[56],
+                lineHeight: theme.lineHeights[56]
             },
             heading4: {
                 fontSize: theme.fontSizes[40],
-                lineHeight: theme.lineHeights[48],
+                lineHeight: theme.lineHeights[48]
             },
             heading5: {
                 fontSize: theme.fontSizes[32],
-                lineHeight: theme.lineHeights[40],
+                lineHeight: theme.lineHeights[40]
             },
             heading6: {
                 fontSize: theme.fontSizes[24],
-                lineHeight: theme.lineHeights[32],
+                lineHeight: theme.lineHeights[32]
             }
         }
     })({ theme, ...props })
@@ -70,7 +70,7 @@ export const defaultElement: { [k in TitleVariants]: TitleElements } = {
     heading3: 'h3',
     heading4: 'h4',
     heading5: 'h5',
-    heading6: 'h6',
+    heading6: 'h6'
 }
 
 export const titleMap: { [k in TitleElements]: typeof Heading1 } = {
@@ -79,5 +79,5 @@ export const titleMap: { [k in TitleElements]: typeof Heading1 } = {
     h3: Heading3,
     h4: Heading4,
     h5: Heading5,
-    h6: Heading6,
+    h6: Heading6
 }

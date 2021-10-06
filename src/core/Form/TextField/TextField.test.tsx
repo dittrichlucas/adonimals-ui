@@ -11,7 +11,7 @@ describe('', () => {
                 color='default'
                 placeholder='Test'
                 value='Test 1'
-                onChange={ () => {} }
+                onChange={ () => { return } }
             />
         )
         const test = screen.getByDisplayValue('Test 1')

@@ -22,7 +22,7 @@ export default {
     }
 } as Meta
 
-const Template: Story<TitleProps> = (args) => <Title {...args} />
+const Template: Story<TitleProps> = args => <Title { ...args } />
 
 export const Heading = Template.bind({})
 Heading.args = {
