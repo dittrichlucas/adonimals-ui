@@ -6,12 +6,12 @@ type Props = {
     theme?: typeof defaultTheme
 }
 
-const ThemeProvider = ({ theme, children }: PropsWithChildren<Props>) => {
+const ThemeProvider = ({ theme, children }: PropsWithChildren<Props>): JSX.Element => {
     const themeValue = theme || defaultTheme
 
     return (
-        <StyledThemeProvider theme={themeValue}>
-            {children}
+        <StyledThemeProvider theme={ themeValue }>
+            { children }
         </StyledThemeProvider>
     )
 }

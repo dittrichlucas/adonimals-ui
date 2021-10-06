@@ -3,13 +3,13 @@ import { BaseTextProps, defaultElement, textMap } from './style'
 
 export type TextProps = PropsWithChildren<BaseTextProps>
 
-const Text = (props: TextProps) => {
+const Text = (props: TextProps): JSX.Element => {
     const { children, element, variant, ...other } = props
     const elementType = element || defaultElement[variant]
     const Component = textMap[elementType]
 
     return (
-        <Component variant={variant} {...other}>{children}</Component>
+        <Component variant={ variant } { ...other }>{ children }</Component>
     )
 }
 

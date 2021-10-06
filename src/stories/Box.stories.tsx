@@ -22,13 +22,38 @@ export default {
         alignItems: {
             control: {
                 type: 'select',
-                options: ['stretch', 'flex-start', 'flex-end', 'center', 'baseline', 'first baseline', 'last baseline', 'start', 'end', 'self-start', 'self-end']
+                options: [
+                    'stretch',
+                    'flex-start',
+                    'flex-end',
+                    'center',
+                    'baseline',
+                    'first baseline',
+                    'last baseline',
+                    'start',
+                    'end',
+                    'self-start',
+                    'self-end'
+                ]
             }
         },
         alignContent: {
             control: {
                 type: 'select',
-                options: ['stretch', 'flex-start', 'flex-end', 'center', 'baseline', 'first baseline', 'last baseline', 'start', 'end', 'space-between', 'space-around', 'space-evenly']
+                options: [
+                    'stretch',
+                    'flex-start',
+                    'flex-end',
+                    'center',
+                    'baseline',
+                    'first baseline',
+                    'last baseline',
+                    'start',
+                    'end',
+                    'space-between',
+                    'space-around',
+                    'space-evenly'
+                ]
             }
         },
         alignSelf: {
@@ -40,17 +65,29 @@ export default {
         justifyContent: {
             control: {
                 type: 'select',
-                options: ['stretch', 'flex-start', 'flex-end', 'center', 'start', 'end', 'left', 'right', 'space-between', 'space-around', 'space-evenly']
+                options: [
+                    'stretch',
+                    'flex-start',
+                    'flex-end',
+                    'center',
+                    'start',
+                    'end',
+                    'left',
+                    'right',
+                    'space-between',
+                    'space-around',
+                    'space-evenly'
+                ]
             }
-        },
+        }
     }
 } as Meta
 
-const Template: Story<BoxProps> = (args) => (
-  <Box {...args}>
-    <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 1</div>
-    <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 2</div>
-    <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 3</div>
+const Template: Story<BoxProps> = args => (
+  <Box { ...args }>
+    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 1</div>
+    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 2</div>
+    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 3</div>
   </Box>
 )
 

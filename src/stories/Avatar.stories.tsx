@@ -6,10 +6,10 @@ import { AvatarProps } from '../core/Avatar/style'
 
 export default {
     title: 'Example/Avatar',
-    component: Avatar,
+    component: Avatar
 } as Meta
 
-const Template: Story<AvatarProps> = (args) => <Avatar {...args} />
+const Template: Story<AvatarProps> = args => <Avatar { ...args } />
 
 export const Image = Template.bind({})
 Image.args = {

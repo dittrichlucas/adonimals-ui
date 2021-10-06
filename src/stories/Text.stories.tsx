@@ -22,7 +22,7 @@ export default {
     }
 } as Meta
 
-const Template: Story<TextProps> = (args) => <Text {...args} />
+const Template: Story<TextProps> = args => <Text { ...args } />
 
 export const Default = Template.bind({})
 Default.args = {

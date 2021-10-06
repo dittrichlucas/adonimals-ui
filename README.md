@@ -55,9 +55,19 @@ ReactDOM.render(<App />, document.querySelector('#app'));
 -->
 ## Components
 
+- [ ] Autocomplete
+- [x] Avatar
 - [x] Box
 - [x] Button
+- [ ] Carrousel
 - [x] Checkbox
+- [ ] Form
+- [ ] IconButton
+- [ ] Menu
+- [ ] Radio
+- [ ] RadioGroup
+- [ ] Select
+- [ ] Slider
 - [x] Text
 - [x] TextField
 - [x] Title

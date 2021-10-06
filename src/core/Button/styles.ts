@@ -1,11 +1,11 @@
-import styled, { DefaultTheme } from 'styled-components'
+import styled from 'styled-components'
 import {
     space,
     variant,
     ColorProps,
     SpaceProps,
     SizeProps,
-    size,
+    size
 } from 'styled-system'
 
 type ButtonVariants =
@@ -53,19 +53,19 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
                 paddingTop: theme.space['spacing-xs'],
                 paddingBottom: theme.space['spacing-xs'],
                 paddingLeft: theme.space['spacing-lg'],
-                paddingRight: theme.space['spacing-lg'],
+                paddingRight: theme.space['spacing-lg']
             },
             medium: {
                 paddingTop: theme.space['spacing-sm'],
                 paddingBottom: theme.space['spacing-sm'],
                 paddingLeft: theme.space['spacing-xxl'],
-                paddingRight: theme.space['spacing-xxl'],
+                paddingRight: theme.space['spacing-xxl']
             },
             large: {
                 paddingTop: theme.space['spacing-md'],
                 paddingBottom: theme.space['spacing-md'],
                 paddingLeft: theme.space['spacing-xxxl'],
-                paddingRight: theme.space['spacing-xxxl'],
+                paddingRight: theme.space['spacing-xxxl']
             }
         }
     })({ theme, ...props }),
@@ -90,5 +90,5 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
                 borderColor: theme.colors.secondary['080']
             }
         }
-    })({ theme, ...props }),
+    })({ theme, ...props })
 }))

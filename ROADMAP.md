@@ -13,7 +13,7 @@
 - [x] Definir componentes da primeira release
 - [ ] Criar componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
@@ -34,7 +34,7 @@
 - [x] Definir tema
 - [ ] Criar _story_ para todos os componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
@@ -51,7 +51,7 @@
     - [x] Title
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
-    - [ ] Avatar
+    - [x] Avatar
     - [x] Box
     - [x] Button
     - [ ] Carrousel
@@ -86,11 +86,15 @@
 
 ### Improvements
 - [ ] Traduzir documentação para inglês
-- [ ] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
+- [x] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
 - [ ] Melhorias do storybook
     - [ ] Adicionar logo
     - [ ] Utilizar fontes escolhidas para o projeto
     - [ ] Utilizar o tema do projeto
+- [ ] Adicionar validações de pre-commit
+    - [ ] Lint
+    - [ ] Padronização das mensagens de commit
+- [ ] Adicionar workflows de CI (Github Actions)
 
 ### Links úteis
 - [Color (styled-system)](https://styled-system.com/table/#color)

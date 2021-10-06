@@ -31,7 +31,7 @@ type BoxElements =
     | 'summary'
     | 'div'
 
-const createBox = (element: BoxElements) => styled(element)<BaseBoxProps>((props) => ({
+const createBox = (element: BoxElements) => styled(element)<BaseBoxProps>(props => ({
     ...space(props),
     ...layout(props),
     ...flexbox(props),

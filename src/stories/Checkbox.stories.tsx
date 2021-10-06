@@ -6,10 +6,10 @@ import { StyledCheckboxProps } from '../core/Form/Checkbox/style'
 
 export default {
     title: 'Example/Checkbox',
-    component: Checkbox,
+    component: Checkbox
 } as Meta
 
-const Template: Story<StyledCheckboxProps> = (args) => <Checkbox {...args} />
+const Template: Story<StyledCheckboxProps> = args => <Checkbox { ...args } />
 
 export const Input = Template.bind({})
 Input.args = {

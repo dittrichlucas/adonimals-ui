@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Text } from '../../index'
 import { AvatarProps, StyledAvatarBox, StyledAvatarImage } from './style'
 
-const Avatar = (props: AvatarProps) => {
+const Avatar = (props: AvatarProps): JSX.Element => {
     const { src, alt, label } = props
     const [hasError, setHasError] = useState(false)
     const firstLetter = label?.charAt(0)
@@ -12,16 +12,16 @@ const Avatar = (props: AvatarProps) => {
     }, [src])
 
     if (src && !hasError) {
-        return <StyledAvatarImage src={src} alt={alt} onError={() => setHasError(true)} />
+        return <StyledAvatarImage src={ src } alt={ alt } onError={ () => setHasError(true) } />
     }
 
     return (
         <StyledAvatarBox src={ src } display='flex' alignItems='center' justifyContent='center'>
-            {firstLetter && (
+            { firstLetter && (
                 <Text variant='large' element='span' color='inherit'>
-                    {firstLetter}
+                    { firstLetter }
                 </Text>
-            )}
+            ) }
         </StyledAvatarBox>
     )
 }

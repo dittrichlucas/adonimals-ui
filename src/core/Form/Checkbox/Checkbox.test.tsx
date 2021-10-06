@@ -9,8 +9,8 @@ describe('', () => {
             <Checkbox
                 label='Test'
                 id='checkbox-test'
-                checked={false}
-                onChange={ () => {} }
+                checked={ false }
+                onChange={ () => { return } }
             />
         )
         const test = screen.getByLabelText(/Test/)
