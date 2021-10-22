@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StyledAvatarImage = exports.StyledAvatarBox = void 0;
 const styled_components_1 = __importDefault(require("styled-components"));
-const index_1 = require("../../index");
-exports.StyledAvatarBox = (0, styled_components_1.default)(index_1.Box)(({ theme }) => ({
+const Box_1 = __importDefault(require("../Box"));
+exports.StyledAvatarBox = (0, styled_components_1.default)(Box_1.default)(({ theme }) => ({
     width: '50px',
     height: '50px',
     color: theme.colors.greyscale['100'],

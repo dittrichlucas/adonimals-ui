@@ -4,7 +4,7 @@ import {
     StyledTextFieldProps,
     StyledBox
 } from './style'
-import { Text } from '../../../index'
+import Text from '../../Text'
 import Box from '../../Box'
 
 type TextFieldProps = PropsWithChildren<StyledTextFieldProps>

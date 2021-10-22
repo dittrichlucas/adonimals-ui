@@ -18,9 +18,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importStar(require("react"));
-const index_1 = require("../../index");
+const Text_1 = __importDefault(require("../Text"));
 const style_1 = require("./style");
 const Avatar = (props) => {
     const { src, alt, label } = props;
@@ -32,7 +35,7 @@ const Avatar = (props) => {
     if (src && !hasError) {
         return react_1.default.createElement(style_1.StyledAvatarImage, { src: src, alt: alt, onError: () => setHasError(true) });
     }
-    return (react_1.default.createElement(style_1.StyledAvatarBox, { src: src, display: 'flex', alignItems: 'center', justifyContent: 'center' }, firstLetter && (react_1.default.createElement(index_1.Text, { variant: 'large', element: 'span', color: 'inherit' }, firstLetter))));
+    return (react_1.default.createElement(style_1.StyledAvatarBox, { src: src, display: 'flex', alignItems: 'center', justifyContent: 'center' }, firstLetter && (react_1.default.createElement(Text_1.default, { variant: 'large', element: 'span', color: 'inherit' }, firstLetter))));
 };
 exports.default = Avatar;
 //# sourceMappingURL=index.js.map

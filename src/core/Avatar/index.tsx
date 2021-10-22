@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Text } from '../../index'
+import Text from '../Text'
 import { AvatarProps, StyledAvatarBox, StyledAvatarImage } from './style'
 
 const Avatar = (props: AvatarProps): JSX.Element => {
