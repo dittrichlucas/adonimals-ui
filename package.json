@@ -46,7 +46,9 @@
     },
     "dependencies": {
         "@fontsource/fira-sans": "4.2.2",
-        "@styled-system/theme-get": "5.1.2",
+        "@styled-system/theme-get": "5.1.2"
+    },
+    "peerDependencies": {
         "react": "17.0.1",
         "react-dom": "17.0.1",
         "styled-components": "5.2.1",

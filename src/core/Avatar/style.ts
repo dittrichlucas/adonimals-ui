@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Box } from '../../index'
+import Box from '../Box'
 
 export type AvatarProps = { src?: string, alt?: string, label?: string }
 
