@@ -19,5 +19,9 @@
     "include": [
         "**/*",
         "**/*.tsx",
+    ],
+    "exclude": [
+        "src/**/*.test.tsx",
+        "src/stories/**/*.tsx",
     ]
 }
