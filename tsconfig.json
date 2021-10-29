@@ -17,8 +17,9 @@
         "esModuleInterop": true
     },
     "include": [
-        "**/*",
-        "**/*.tsx",
+        "./src/*",
+        "./src/core/**/*",
+        "./src/theme/**/*"
     ],
     "exclude": [
         ".storybook",
