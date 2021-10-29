@@ -1,4 +1,15 @@
 "use strict";
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -17,13 +28,9 @@ const colorUnion = (props) => {
     return props.color;
 };
 exports.colorUnion = colorUnion;
-exports.StyledBox = (0, styled_components_1.default)(Box_1.default)(({ theme, ...props }) => ({
-    padding: theme.space['spacing-xxs'],
-    paddingLeft: theme.space['spacing-xs'],
-    paddingRight: theme.space['spacing-xs'],
-    borderRadius: theme.radii[4],
-    ...(0, styled_system_1.space)({ theme, ...props }),
-    ...(0, styled_system_1.variant)({
+exports.StyledBox = (0, styled_components_1.default)(Box_1.default)((_a) => {
+    var { theme } = _a, props = __rest(_a, ["theme"]);
+    return (Object.assign(Object.assign(Object.assign({ padding: theme.space['spacing-xxs'], paddingLeft: theme.space['spacing-xs'], paddingRight: theme.space['spacing-xs'], borderRadius: theme.radii[4] }, (0, styled_system_1.space)(Object.assign({ theme }, props))), (0, styled_system_1.variant)({
         prop: 'color',
         variants: {
             error: {
@@ -47,8 +54,7 @@ exports.StyledBox = (0, styled_components_1.default)(Box_1.default)(({ theme, ..
                 borderColor: theme.colors.secondary['120']
             }
         }
-    })({ theme, ...props, color: (0, exports.colorUnion)(props) }),
-    ...(0, styled_system_1.variant)({
+    })(Object.assign(Object.assign({ theme }, props), { color: (0, exports.colorUnion)(props) }))), (0, styled_system_1.variant)({
         variants: {
             outlined: {
                 backgroundColor: 'transparent',
@@ -62,8 +68,8 @@ exports.StyledBox = (0, styled_components_1.default)(Box_1.default)(({ theme, ..
                 borderStyle: 'solid'
             }
         }
-    })({ theme, ...props })
-}));
+    })(Object.assign({ theme }, props))));
+});
 exports.StyledTextField = (0, styled_components_1.default)('input')(({ theme }) => ({
     fontFamily: theme.fonts.fontFamily,
     borderRadius: '5px',

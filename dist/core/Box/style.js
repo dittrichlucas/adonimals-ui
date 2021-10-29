@@ -6,12 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.boxMap = void 0;
 const styled_components_1 = __importDefault(require("styled-components"));
 const styled_system_1 = require("styled-system");
-const createBox = (element) => (0, styled_components_1.default)(element)(props => ({
-    ...(0, styled_system_1.space)(props),
-    ...(0, styled_system_1.layout)(props),
-    ...(0, styled_system_1.flexbox)(props),
-    ...(0, styled_system_1.color)(props)
-}));
+const createBox = (element) => (0, styled_components_1.default)(element)(props => (Object.assign(Object.assign(Object.assign(Object.assign({}, (0, styled_system_1.space)(props)), (0, styled_system_1.layout)(props)), (0, styled_system_1.flexbox)(props)), (0, styled_system_1.color)(props))));
 const Header = createBox('header');
 const Nav = createBox('nav');
 const Section = createBox('section');
