@@ -3,7 +3,6 @@
         "target": "es6",
         "module": "commonjs",
         "jsx": "react",
-        "declaration": true,
         "sourceMap": true,
         "sourceRoot": ".",
         "outDir": "./dist",
@@ -15,7 +14,11 @@
             "node",
             "jest"
         ],
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        // Ensure that Babel can safely transpile files in the TypeScript project
+        "isolatedModules": true
     },
     "include": [
         "./src/*",
