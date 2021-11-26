@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import {
     space,
     variant,
+    layout,
     ColorProps,
     SpaceProps,
-    SizeProps,
-    size
+    LayoutProps
 } from 'styled-system'
 
 type ButtonVariants =
@@ -27,7 +27,7 @@ type ButtonColor =
 export type StyledButtonProps =
     & SpaceProps
     & ColorProps
-    & SizeProps
+    & LayoutProps
     & {
         variant: ButtonVariants,
         size: ButtonSize
@@ -44,7 +44,7 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
     cursor: 'pointer',
     borderWidth: theme.radii[2],
     borderStyle: 'solid',
-    ...size({ theme, ...props }),
+    ...layout({ theme, ...props }),
     ...space({ theme, ...props }),
     ...variant({
         prop: 'size',
