@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 import {
+    border,
+    BordersProps,
+    boxShadow,
+    BoxShadowProps,
     color,
     ColorProps,
     flexbox,
@@ -15,6 +19,8 @@ export type BaseBoxProps =
     & SpaceProps
     & LayoutProps
     & FlexboxProps
+    & BordersProps
+    & BoxShadowProps
     & {
         color?: string,
         element?: BoxElements
@@ -32,6 +38,8 @@ type BoxElements =
     | 'div'
 
 const createBox = (element: BoxElements) => styled(element)<BaseBoxProps>(props => ({
+    ...border(props),
+    ...boxShadow(props),
     ...space(props),
     ...layout(props),
     ...flexbox(props),
