@@ -11,13 +11,14 @@ export declare type StyledBoxProps = SpaceProps & SizeProps & {
 export declare type StyledTextFieldProps = StyledBoxProps & {
     id?: string;
     value?: string;
-    type?: 'text' | 'number' | 'password';
+    type?: 'text' | 'number' | 'password' | 'email';
     required?: boolean;
     placeholder: string;
     prefix?: ReactNode;
     suffix?: ReactNode;
     label?: string;
-    onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
+    spellCheck?: boolean;
+    onChange?: (event?: ChangeEvent<HTMLInputElement>) => void;
 };
 export declare const colorUnion: (props: StyledBoxProps) => 'error' | 'disabled' | TextFieldColor;
 export declare const StyledBox: import("styled-components").StyledComponent<(props: import("../../Box").BoxProps) => JSX.Element, import("styled-components").DefaultTheme, SpaceProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, string | number | symbol> & SizeProps<Required<import("styled-system").Theme<import("styled-system").TLengthStyledSystem>>, import("csstype").Property.Height<import("styled-system").TLengthStyledSystem>> & {
@@ -34,12 +35,13 @@ export declare const StyledTextField: import("styled-components").StyledComponen
 } & {
     id?: string | undefined;
     value?: string | undefined;
-    type?: "number" | "password" | "text" | undefined;
+    type?: "number" | "password" | "text" | "email" | undefined;
     required?: boolean | undefined;
     placeholder: string;
     prefix?: ReactNode;
     suffix?: ReactNode;
     label?: string | undefined;
-    onChange?: ((event: ChangeEvent<HTMLInputElement>) => void) | undefined;
+    spellCheck?: boolean | undefined;
+    onChange?: ((event?: ChangeEvent<HTMLInputElement> | undefined) => void) | undefined;
 }, never>;
 export {};
