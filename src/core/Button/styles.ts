@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react'
 import styled from 'styled-components'
 import {
     space,
@@ -29,11 +30,12 @@ export type StyledButtonProps =
     & ColorProps
     & LayoutProps
     & {
-        variant: ButtonVariants,
+        variant: ButtonVariants
         size: ButtonSize
-        disabled: boolean,
+        disabled: boolean
         color: ButtonColor
         backgroundColor: string
+        onClick?: (event?: MouseEvent<HTMLButtonElement>) => void
     }
 
 export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...props }) => ({

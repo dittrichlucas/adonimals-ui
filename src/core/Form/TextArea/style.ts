@@ -1,3 +1,4 @@
+import { ChangeEvent } from 'react'
 import styled from 'styled-components'
 import { StyledBoxProps } from '../TextField/style'
 
@@ -12,7 +13,8 @@ export type TextAreaProps =
         wrap?: string
         cols?: number
         rows?: number
-        onChange?: () => void
+        spellCheck?: boolean
+        onChange?: (event?: ChangeEvent<HTMLTextAreaElement>) => void
     }
 
 export const StyledTextArea = styled('textarea')(({ theme }) => ({

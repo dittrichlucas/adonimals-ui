@@ -31,13 +31,14 @@ export type StyledTextFieldProps =
     & {
         id?: string
         value?: string
-        type?: 'text' | 'number' | 'password'
+        type?: 'text' | 'number' | 'password' | 'email'
         required?: boolean
         placeholder: string
         prefix?: ReactNode
         suffix?: ReactNode
         label?: string
-        onChange?: (event: ChangeEvent<HTMLInputElement>) => void
+        spellCheck?: boolean
+        onChange?: (event?: ChangeEvent<HTMLInputElement>) => void
     }
 
 export const colorUnion = (props: StyledBoxProps): 'error' | 'disabled' | TextFieldColor => {
