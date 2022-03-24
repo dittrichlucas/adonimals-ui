@@ -25,7 +25,7 @@ type TextVariants =
 
 const createText = (element: TextElements) => styled(element)<BaseTextProps>(({ theme, ...props }) => ({
     fontFamily: theme.fonts.fontFamily,
-    color: theme.colors.greyscale['000'],
+    color: theme.colors.greyscale['900'],
     ...space({ theme, ...props }),
     ...color({ theme, ...props }),
     ...variant({

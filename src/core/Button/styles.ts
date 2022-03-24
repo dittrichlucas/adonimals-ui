@@ -1,11 +1,12 @@
+import { MouseEvent } from 'react'
 import styled from 'styled-components'
 import {
     space,
     variant,
+    layout,
     ColorProps,
     SpaceProps,
-    SizeProps,
-    size
+    LayoutProps
 } from 'styled-system'
 
 type ButtonVariants =
@@ -27,13 +28,14 @@ type ButtonColor =
 export type StyledButtonProps =
     & SpaceProps
     & ColorProps
-    & SizeProps
+    & LayoutProps
     & {
-        variant: ButtonVariants,
+        variant: ButtonVariants
         size: ButtonSize
-        disabled: boolean,
+        disabled: boolean
         color: ButtonColor
         backgroundColor: string
+        onClick?: (event?: MouseEvent<HTMLButtonElement>) => void
     }
 
 export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...props }) => ({
@@ -44,7 +46,7 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
     cursor: 'pointer',
     borderWidth: theme.radii[2],
     borderStyle: 'solid',
-    ...size({ theme, ...props }),
+    ...layout({ theme, ...props }),
     ...space({ theme, ...props }),
     ...variant({
         prop: 'size',
@@ -72,22 +74,22 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
     ...variant({
         variants: {
             contained: {
-                color: theme.colors.secondary['080'],
-                backgroundColor: theme.colors.primary['120'],
+                color: theme.colors.secondary['100'],
+                backgroundColor: theme.colors.primary['900'],
                 boxShadow: '',
                 borderColor: theme.colors.transparent
             },
             outlined: {
-                color: theme.colors.primary['120'],
-                backgroundColor: theme.colors.secondary['080'],
+                color: theme.colors.primary['900'],
+                backgroundColor: theme.colors.secondary['100'],
                 boxShadow: '',
-                borderColor: theme.colors.primary['120']
+                borderColor: theme.colors.primary['900']
             },
             text: {
-                color: theme.colors.primary['120'],
-                backgroundColor: theme.colors.secondary['080'],
+                color: theme.colors.primary['900'],
+                backgroundColor: theme.colors.secondary['100'],
                 boxShadow: '',
-                borderColor: theme.colors.secondary['080']
+                borderColor: theme.colors.secondary['100']
             }
         }
     })({ theme, ...props })

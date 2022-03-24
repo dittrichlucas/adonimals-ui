@@ -1,11 +1,11 @@
 <!-- Logo
 Quando eu tiver o logo descomento essa sessão
 <p align="center">
-  <img width="150" src="logo.png" alt="adonimals-UI logo" />
+  <img width="150" src="logo.png" alt="AdonimalsUI logo" />
 </p>
 -->
 <!-- Name -->
-<h1 align="center">adonimals-UI</h1>
+<h1 align="center">AdonimalsUI</h1>
 
 <!-- Badges
 <div align="center">
@@ -23,7 +23,7 @@ Quando eu tiver o logo descomento essa sessão
 <!--
 ## Installation
 
-adonimals-UI is available as an [npm package](https://www.npmjs.com/package/).
+AdonimalsUI is available as an [npm package](https://www.npmjs.com/package/).
 
 ```sh
 // with npm
