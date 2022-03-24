@@ -9,7 +9,7 @@ export default {
     component: Avatar
 } as Meta
 
-const Template: Story<AvatarProps> = args => <Avatar { ...args } />
+const Template: Story<AvatarProps> = args => <Avatar {...args} />
 
 export const Image = Template.bind({})
 Image.args = {

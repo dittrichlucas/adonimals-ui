@@ -34,11 +34,11 @@ export const StyledCheckbox = styled('div')<{ checked: boolean }>(({ checked, th
     display: 'inline-block',
     width: theme.radii['16'],
     height: theme.radii['16'],
-    background: checked ? theme.colors.primary['120'] : theme.colors.secondary['120'],
+    background: checked ? theme.colors.primary['900'] : theme.colors.secondary['900'],
     borderRadius: theme.radii['4'],
     transition: 'all 150ms',
     [`${HiddenCheckbox}:focus + &`]: {
-        boxShadow: `0 0 0 ${theme.radii['4']} ${theme.colors.primary['110']}`
+        boxShadow: `0 0 0 ${theme.radii['4']} ${theme.colors.primary['700']}`
     },
     [`${Icon}`]: {
         visibility: checked ? 'visible' : 'hidden'

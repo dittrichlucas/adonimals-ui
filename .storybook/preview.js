@@ -6,8 +6,8 @@ import defaultTheme from '../src/theme/defaultTheme'
 const themes = [defaultTheme]
 
 export const parameters = {
-  styledComponentsThemes: { themes },
-  actions: { argTypesRegex: "^on[A-Z].*" },
+    styledComponentsThemes: { themes },
+    actions: { argTypesRegex: "^on[A-Z].*" },
 }
 
 export const decorators = [withThemesProvider(themes, ThemeProvider)]

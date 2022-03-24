@@ -84,11 +84,11 @@ export default {
 } as Meta
 
 const Template: Story<BoxProps> = args => (
-  <Box { ...args }>
-    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 1</div>
-    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 2</div>
-    <div style={ { padding: 12, backgroundColor: 'inherit', color: 'white' } }>Item 3</div>
-  </Box>
+    <Box {...args}>
+        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 1</div>
+        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 2</div>
+        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 3</div>
+    </Box>
 )
 
 export const Heading = Template.bind({})

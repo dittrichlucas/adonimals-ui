@@ -15,7 +15,7 @@ export const StyledAvatarBox = styled(Box)<AvatarProps>(({ theme, ...props }) =>
     width: '50px',
     height: '50px',
     color: theme.colors.greyscale['100'],
-    backgroundColor: theme.colors.greyscale['050'],
+    backgroundColor: theme.colors.greyscale['500'],
     borderRadius: '50%'
 }))
 

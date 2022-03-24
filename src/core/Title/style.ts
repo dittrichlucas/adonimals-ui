@@ -24,7 +24,7 @@ export type TitleVariants =
 
 const createTitle = (element: TitleElements) => styled(element)<HeadingProps>(({ theme, ...props }) => ({
     fontFamily: theme.fonts.fontFamily,
-    color: theme.colors.greyscale['000'],
+    color: theme.colors.greyscale['900'],
     ...space({ theme, ...props }),
     ...color({ theme, ...props }),
     ...variant({

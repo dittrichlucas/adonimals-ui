@@ -74,22 +74,22 @@ export const StyledButton = styled('button')<StyledButtonProps>(({ theme, ...pro
     ...variant({
         variants: {
             contained: {
-                color: theme.colors.secondary['080'],
-                backgroundColor: theme.colors.primary['120'],
+                color: theme.colors.secondary['100'],
+                backgroundColor: theme.colors.primary['900'],
                 boxShadow: '',
                 borderColor: theme.colors.transparent
             },
             outlined: {
-                color: theme.colors.primary['120'],
-                backgroundColor: theme.colors.secondary['080'],
+                color: theme.colors.primary['900'],
+                backgroundColor: theme.colors.secondary['100'],
                 boxShadow: '',
-                borderColor: theme.colors.primary['120']
+                borderColor: theme.colors.primary['900']
             },
             text: {
-                color: theme.colors.primary['120'],
-                backgroundColor: theme.colors.secondary['080'],
+                color: theme.colors.primary['900'],
+                backgroundColor: theme.colors.secondary['100'],
                 boxShadow: '',
-                borderColor: theme.colors.secondary['080']
+                borderColor: theme.colors.secondary['100']
             }
         }
     })({ theme, ...props })

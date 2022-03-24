@@ -63,24 +63,24 @@ export const StyledBox = styled(Box)<StyledBoxProps>(({ theme, ...props }) => ({
         prop: 'color',
         variants: {
             error: {
-                color: theme.colors.feedback.error['120'],
-                borderColor: theme.colors.feedback.error['120']
+                color: theme.colors.feedback.error['900'],
+                borderColor: theme.colors.feedback.error['900']
             },
             disabled: {
-                color: theme.colors.greyscale['050'],
-                borderColor: theme.colors.greyscale['050']
+                color: theme.colors.greyscale['400'],
+                borderColor: theme.colors.greyscale['400']
             },
             default: {
-                color: theme.colors.greyscale['000'],
-                borderColor: theme.colors.greyscale['025']
+                color: theme.colors.greyscale['900'],
+                borderColor: theme.colors.greyscale['800']
             },
             primary: {
-                color: theme.colors.primary['120'],
-                borderColor: theme.colors.primary['120']
+                color: theme.colors.primary['900'],
+                borderColor: theme.colors.primary['900']
             },
             secondary: {
-                color: theme.colors.secondary['120'],
-                borderColor: theme.colors.secondary['120']
+                color: theme.colors.secondary['900'],
+                borderColor: theme.colors.secondary['900']
             }
         }
     })({ theme, ...props, color: colorUnion(props) }),
@@ -93,7 +93,7 @@ export const StyledBox = styled(Box)<StyledBoxProps>(({ theme, ...props }) => ({
             },
             text: {
                 borderWidth: theme.radii[0],
-                backgroundColor: theme.colors.greyscale['075'],
+                backgroundColor: theme.colors.greyscale['300'],
                 borderBottomWidth: theme.radii[2],
                 borderStyle: 'solid'
             }
@@ -105,7 +105,7 @@ export const StyledTextField = styled('input')<StyledTextFieldProps>(({ theme })
     fontFamily: theme.fonts.fontFamily,
     borderRadius: '5px',
     fontSize: theme.fontSizes[16],
-    color: theme.colors.greyscale['025'],
+    color: theme.colors.greyscale['800'],
     background: 'none',
     border: 'none',
     outline: 'none',
