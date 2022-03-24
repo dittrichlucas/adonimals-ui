@@ -1,4 +1,5 @@
 export { default as ThemeProvider } from './theme/ThemeProvider'
+export { default as defaultTheme } from './theme/defaultTheme'
 
 export { default as Avatar } from './core/Avatar'
 export { default as Box } from './core/Box'
