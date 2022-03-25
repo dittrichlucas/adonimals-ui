@@ -1,24 +1,22 @@
-<!-- Logo
-Quando eu tiver o logo descomento essa sessão
+<!-- Logo -->
 <p align="center">
-  <img width="150" src="logo.png" alt="AdonimalsUI logo" />
+  <img width="250" src="src/static/logo-ui.svg" alt="AdonimalsUI logo" />
 </p>
--->
-<!-- Name -->
-<h1 align="center">AdonimalsUI</h1>
 
-<!-- Badges
+<!-- Name -->
+<p align="center"><a href='http://facebook.github.io/react/'>React</a> UI toolkit for the web.</p>
+
+<!-- Badges --> 
 <div align="center">
 
-[React](http://facebook.github.io/react/) UI toolkit for the web.
-[![npm package](https://img.shields.io/npm/v/flipper-ui/latest.svg)](https://www.npmjs.com/package/flipper-ui)
-[![npm downloads](https://img.shields.io/npm/dm/flipper-ui.svg)](https://www.npmjs.com/package/flipper-ui)
-[![Dependencies](https://img.shields.io/david/nginformatica/flipper-ui.svg?style=flat-square)](https://david-dm.org/nginformatica/flipper-ui)
-[![DevDependencies](https://img.shields.io/david/dev/nginformatica/flipper-ui.svg)](https://david-dm.org/nginformatica/flipper-ui?type=dev)
-[![Build Status](https://travis-ci.org/nginformatica/flipper-ui.svg?branch=master)](https://travis-ci.org/nginformatica/flipper-ui)
+![npm package](https://img.shields.io/npm/v/adonimals-ui/latest.svg)
+![npm downloads](https://img.shields.io/npm/dm/adonimals-ui.svg)
+![license](https://img.shields.io/github/license/dittrichlucas/adonimals-ui)
+![last commit](https://img.shields.io/github/last-commit/dittrichlucas/adonimals-ui)
+![release](https://github.com/dittrichlucas/adonimals-ui/actions/workflows/release.yml/badge.svg)
+![node.js ci](https://github.com/dittrichlucas/adonimals-ui/actions/workflows/build.yml/badge.svg)
 
 </div>
--->
 
 <!--
 ## Installation
