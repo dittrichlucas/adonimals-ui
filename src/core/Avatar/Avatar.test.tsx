@@ -1,6 +1,7 @@
 import React from 'react'
-import { renderWithTheme } from '../../tests/renderWithTheme'
+
 import Avatar from '.'
+import { renderWithTheme } from '../../tests/renderWithTheme'
 import { screen } from '@testing-library/dom'
 
 describe('', () => {

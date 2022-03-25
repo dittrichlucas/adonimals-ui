@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react'
-import { HeadingProps, titleMap, defaultElement } from './style'
+
+import { defaultElement, HeadingProps, titleMap } from './style'
 
 export type TitleProps = PropsWithChildren<HeadingProps>
 

@@ -1,11 +1,12 @@
 import React, { PropsWithChildren } from 'react'
-import {
-    StyledTextField,
-    StyledTextFieldProps,
-    StyledBox
-} from './style'
-import Text from '../../Text'
+
 import Box from '../../Box'
+import Text from '../../Text'
+import {
+    StyledBox,
+    StyledTextField,
+    StyledTextFieldProps
+} from './style'
 
 type TextFieldProps = PropsWithChildren<StyledTextFieldProps>
 

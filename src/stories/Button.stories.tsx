@@ -10,7 +10,7 @@ export default {
         variant: {
             control: {
                 type: 'select',
-                options: ['contained', 'outlined', 'text']
+                label: ['contained', 'outlined']
             }
         },
         size: {
@@ -18,20 +18,29 @@ export default {
                 type: 'select',
                 options: ['small', 'medium', 'large']
             }
+        },
+        color: {
+            control: {
+                type: 'select',
+                options: ['primary', 'secondary']
+            }
         }
     }
 } as Meta
 
 const TemplateRow: Story<ButtonProps> = args => (
-    <div style={ { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' } }>
-        <Button { ...args } size='small'>Button</Button>
-        <Button { ...args } size='medium'>Button</Button>
-        <Button { ...args } size='large'>Button</Button>
+    <div style={{ display: 'flex', justifyContent: 'center'}}>
+        <Button {...args}>Default</Button>
+        {/* <Button {...args}>Hover</Button> */}
+        {/* <Button {...args}>Press</Button> */}
+        {/* <Button {...args}>Focus</Button> */}
+        {/* <Button {...args} disabled>Disabled</Button> */}
     </div>
 )
 
 export const Default = TemplateRow.bind({})
 Default.args = {
     children: 'Button',
-    variant: 'outlined'
+    variant: 'outlined',
+    size: 'medium'
 }

@@ -1,6 +1,6 @@
 <!-- Logo -->
 <p align="center">
-  <img width="250" src="src/static/logo-ui.svg" alt="AdonimalsUI logo" />
+  <img width="250" src="src/static/logo.svg" alt="AdonimalsUI logo" />
 </p>
 
 <!-- Name -->

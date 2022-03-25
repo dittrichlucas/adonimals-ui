@@ -1,7 +1,8 @@
-import { screen } from '@testing-library/dom'
 import React from 'react'
-import Text from '.'
+
 import { renderWithTheme } from '../../tests/renderWithTheme'
+import { screen } from '@testing-library/dom'
+import Text from '.'
 
 describe('', () => {
     test('', () => {

@@ -1,7 +1,8 @@
 import React from 'react'
+
 import Box from '../../Box'
 import Text from '../../Text'
-import { Icon, HiddenCheckbox, StyledCheckbox, StyledCheckboxProps } from './style'
+import { HiddenCheckbox, Icon, StyledCheckbox, StyledCheckboxProps } from './style'
 
 const Checkbox = (props: StyledCheckboxProps): JSX.Element => {
     const { id, label, checked, onChange } = props

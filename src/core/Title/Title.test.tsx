@@ -1,7 +1,8 @@
 import React from 'react'
+
 import { renderWithTheme } from '../../tests/renderWithTheme'
-import Title from '.'
 import { screen } from '@testing-library/react'
+import Title from '.'
 
 describe('testing title component', () => {
     test('it should render an h1', () => {

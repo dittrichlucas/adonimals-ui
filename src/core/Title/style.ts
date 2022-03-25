@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { variant, space, SpaceProps, color } from 'styled-system'
+import { color, space, SpaceProps, variant } from 'styled-system'
 
 export type HeadingProps = {
     variant: TitleVariants,

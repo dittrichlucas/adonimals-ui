@@ -1,6 +1,7 @@
 import React from 'react'
-import Text from '../../Text'
+
 import { StyledBox } from '../TextField/style'
+import Text from '../../Text'
 import { StyledTextArea, TextAreaProps } from './style'
 
 const TextArea = (props: TextAreaProps): JSX.Element => {

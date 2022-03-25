@@ -1,6 +1,7 @@
 import React from 'react'
-import { renderWithTheme } from '../../tests/renderWithTheme'
+
 import Button from '.'
+import { renderWithTheme } from '../../tests/renderWithTheme'
 import { screen } from '@testing-library/dom'
 
 describe('', () => {
@@ -9,7 +10,6 @@ describe('', () => {
         <Button
             variant='contained'
             size='medium'
-            backgroundColor='#000'
             color='primary'
             disabled={ false }>Button
         </Button>)

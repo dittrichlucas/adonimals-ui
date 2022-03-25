@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+
 import Text from '../Text'
 import { AvatarProps, StyledAvatarBox, StyledAvatarImage } from './style'
 

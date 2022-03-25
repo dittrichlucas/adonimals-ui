@@ -1,6 +1,6 @@
+import Box from '../Box'
 import styled from 'styled-components'
 import { space, SpaceProps } from 'styled-system'
-import Box from '../Box'
 
 export type AvatarProps =
     & SpaceProps

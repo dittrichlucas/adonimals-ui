@@ -1,7 +1,8 @@
-import { screen } from '@testing-library/dom'
 import React from 'react'
+
 import Checkbox from '../Checkbox'
 import { renderWithTheme } from '../../../tests/renderWithTheme'
+import { screen } from '@testing-library/dom'
 
 describe('', () => {
     test('', () => {

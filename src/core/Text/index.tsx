@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from 'react'
+
 import { BaseTextProps, defaultElement, textMap } from './style'
 
 export type TextProps = PropsWithChildren<BaseTextProps>

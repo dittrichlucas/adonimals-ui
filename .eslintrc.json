@@ -66,14 +66,15 @@
         "sort-imports": [
             "error",
             {
+                "allowSeparatedGroups": true,
                 "ignoreCase": true,
-                "ignoreDeclarationSort": true,
-                "ignoreMemberSort": true,
+                "ignoreDeclarationSort": false,
+                "ignoreMemberSort": false,
                 "memberSyntaxSortOrder": [
-                    "none",
                     "all",
+                    "single",
                     "multiple",
-                    "single"
+                    "none"
                 ]
             }
         ],
@@ -189,12 +190,14 @@
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-object-literal-type-assertion": "off",
         "@typescript-eslint/array-type": "off",
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "unused-imports/no-unused-imports": "error"
     },
     "plugins": [
         "react",
         "prefer-arrow",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "unused-imports"
     ],
     "settings": {
         "react": {
