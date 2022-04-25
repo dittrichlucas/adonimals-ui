@@ -5,7 +5,7 @@ import TextField from '../core/Form/TextField'
 import { StyledTextFieldProps } from '../core/Form/TextField/style'
 
 export default {
-    title: 'Example/TextField',
+    title: 'Components/TextField',
     component: TextField,
     argTypes: {
         color: {

@@ -5,7 +5,7 @@ import TextArea from '../core/Form/TextArea'
 import { TextAreaProps } from '../core/Form/TextArea/style'
 
 export default {
-    title: 'Example/TextArea',
+    title: 'Components/TextArea',
     component: TextArea,
     argTypes: {
         color: {

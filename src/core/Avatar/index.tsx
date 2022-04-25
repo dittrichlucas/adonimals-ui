@@ -4,7 +4,7 @@ import Text from '../Text'
 import { AvatarProps, StyledAvatarBox, StyledAvatarImage } from './style'
 
 const Avatar = (props: AvatarProps): JSX.Element => {
-    const { src, alt, label } = props
+    const { src, alt, label, variant } = props
     const [hasError, setHasError] = useState(false)
     const firstLetter = label?.charAt(0)
 
@@ -13,13 +13,13 @@ const Avatar = (props: AvatarProps): JSX.Element => {
     }, [src])
 
     if (src && !hasError) {
-        return <StyledAvatarImage src={ src } alt={ alt } onError={ () => setHasError(true) } />
+        return <StyledAvatarImage variant={ variant } src={ src } alt={ alt } onError={ () => setHasError(true) } />
     }
 
     return (
-        <StyledAvatarBox src={ src } display='flex' alignItems='center' justifyContent='center'>
+        <StyledAvatarBox variant={ variant } src={ src } display='flex' alignItems='center' justifyContent='center'>
             { firstLetter && (
-                <Text variant='large' element='span' color='inherit'>
+                <Text variant='b1' element='span' color='inherit'>
                     { firstLetter }
                 </Text>
             ) }

@@ -1,0 +1,51 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+import { styled } from '@storybook/theming'
+
+import Box from '../core/Box'
+
+export const StyledDiv = styled.div`
+    font-family: 'Fira Sans';
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+`
+
+export const StyledP = styled.p`
+    font-family: 'Fira Sans';
+    font-size: 12px;
+`
+
+<Meta title="Tokens/↪ Size & spacings"/> 
+
+### Size & spacings
+
+Use multiples of 4 or 8. Apply it to typography, buttons, spacings, etc. A few examples below.
+
+<Box element="div" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+    {/* <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}> */}
+        <StyledDiv style={{ background: "#FF9500", height: "4px", marginTop: "25px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FF9F1A", height: "8px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFAA33", height: "16px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFB54D", height: "24px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFBF66", height: "32px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFCA80", height: "40px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFD599", height: "48px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFDFB3", height: "56px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFEACC", height: "64px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFEACC", height: "80px" }}>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFEACC", height: "100px" }}>
+        </StyledDiv>
+    {/* </Box> */}
+</Box>

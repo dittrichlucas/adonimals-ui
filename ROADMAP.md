@@ -110,3 +110,4 @@
 - [Boas práticas de testes](https://willianjusten.com.br/erros-comuns-com-o-react-testing-library)
 - [Prioridade das queries nos testes](https://testing-library.com/docs/queries/about/#priority)
 - [Design patterns](https://refactoring.guru/pt-br/design-patterns)
+- [Edição de mdx](https://www.reactjunkie.com/css-in-js-storybook-mdx)

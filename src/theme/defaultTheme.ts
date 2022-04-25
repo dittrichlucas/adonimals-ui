@@ -44,7 +44,9 @@ const defaultTheme = {
         12: 12,
         16: 16,
         24: 24,
-        40: 40
+        40: 40,
+        48: 48,
+        64: 64
     },
     colors: {
         transparent: 'transparent',
@@ -109,11 +111,11 @@ const defaultTheme = {
                 '500': '#9DF08F'
             },
             warning: {
-                '900': '#B42518',
-                '800': '#E02F1F',
-                '700': '#E86154',
-                '600': '#ED8278',
-                '500': '#F3ACA5'
+                '900': '#FFE800',
+                '800': '#FFEB1F',
+                '700': '#FCEC44',
+                '600': '#FFF15E',
+                '500': '#FCF17C'
             }
         },
         greyscale: {

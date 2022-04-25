@@ -4,13 +4,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Text, { TextProps } from '../core/Text'
 
 export default {
-    title: 'Example/Text',
+    title: 'Typography/Text',
     component: Text,
     argTypes: {
         variant: {
             control: {
                 type: 'select',
-                options: ['large', 'medium', 'small']
+                options: ['bb1', 'b1', 'bb2', 'b2']
             }
         },
         element: {

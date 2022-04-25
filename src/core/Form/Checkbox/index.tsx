@@ -15,7 +15,7 @@ const Checkbox = (props: StyledCheckboxProps): JSX.Element => {
                     <polyline points="20 6 9 17 4 12" />
                 </Icon>
             </StyledCheckbox>
-            <Text ml='spacing-xxxs' htmlFor={ id } element='label' variant='medium' color='inherit'>
+            <Text ml='spacing-xxxs' htmlFor={ id } element='label' variant='b2' color='inherit'>
                 { label }
             </Text>
         </Box>

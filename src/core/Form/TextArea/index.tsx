@@ -20,7 +20,7 @@ const TextArea = (props: TextAreaProps): JSX.Element => {
 
     return (
         <StyledBox display='flex' flexDirection='column' { ...props }>
-            <Text color='inherit' variant='medium' element='label' htmlFor={ id }>
+            <Text color='inherit' variant='b2' element='label' htmlFor={ id }>
                 { label }
             </Text>
             <StyledTextArea

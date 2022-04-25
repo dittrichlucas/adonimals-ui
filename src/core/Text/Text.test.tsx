@@ -6,7 +6,7 @@ import Text from '.'
 
 describe('', () => {
     test('', () => {
-        renderWithTheme(<Text variant='medium' element='p' color='#000'>Teste 1</Text>)
+        renderWithTheme(<Text variant='b2' element='p' color='#000'>Teste 1</Text>)
         const test = screen.getByText('Teste 1')
 
         expect(test.tagName).toBe('P')

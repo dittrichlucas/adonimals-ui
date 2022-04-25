@@ -5,7 +5,7 @@ import Avatar from '../core/Avatar'
 import { AvatarProps } from '../core/Avatar/style'
 
 export default {
-    title: 'Example/Avatar',
+    title: 'Tokens/↪ Iconography',
     component: Avatar
 } as Meta
 
@@ -15,3 +15,12 @@ export const Image = Template.bind({})
 Image.args = {
     label: 'Username'
 }
+
+/*
+    - reference: https://www.toools.design/icon-library-resources-and-free-open-source-icons
+    - https://feathericons.com/
+    - https://github.com/icons8/line-awesome
+    - https://iconsvg.xyz/
+    - https://icons.mono.company/
+    - https://www.notion.so/Doodlicons-519314a92ed3474093a10e44946bbb72
+ */ 
