@@ -12,7 +12,9 @@ const defaultTheme = {
         'spacing-lg': 40,
         'spacing-xl': 48,
         'spacing-xxl': 56,
-        'spacing-xxxl': 64
+        'spacing-xxxl': 64,
+        'spacing-xxxxl': 80,
+        'spacing-xxxxxl': 100
     },
     fontSizes: {
         64: '64px',

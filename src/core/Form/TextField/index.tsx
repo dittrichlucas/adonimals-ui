@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react'
 
-import Box from '../../Box'
 import Text from '../../Text'
 import {
     StyledBox,
@@ -18,8 +17,6 @@ const TextField = (props: TextFieldProps): JSX.Element => {
         onChange,
         placeholder,
         disabled,
-        variant = 'text',
-        color = 'default',
         error,
         prefix,
         suffix,
@@ -31,7 +28,6 @@ const TextField = (props: TextFieldProps): JSX.Element => {
             <Text color='inherit' variant='b2' element='label' htmlFor={ id }>
                 { label }
             </Text>
-            <Box display='flex' flexDirection='row' py='spacing-xxxs' alignItems='center'>
                 { prefix }
                 <StyledTextField
                     id={ id }
@@ -40,12 +36,9 @@ const TextField = (props: TextFieldProps): JSX.Element => {
                     onChange={ onChange }
                     placeholder={ placeholder }
                     disabled={ disabled }
-                    variant= { variant }
-                    color={ color }
                     error={ error }
                 />
                 { suffix }
-            </Box>
         </StyledBox>
     )
 }

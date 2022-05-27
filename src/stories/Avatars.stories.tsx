@@ -6,7 +6,15 @@ import { AvatarProps } from '../core/Avatar/style'
 
 export default {
     title: 'Tokens/↪ Avatars',
-    component: Avatar
+    component: Avatar,
+    argTypes: {
+        variant: {
+            control: {
+                type: 'select',
+                options: ['large', 'extralarge']
+            }
+        }
+    }
 } as Meta
 
 const Template: Story<AvatarProps> = args => <Avatar {...args} />

@@ -6,28 +6,13 @@ import { TextAreaProps } from '../core/Form/TextArea/style'
 
 export default {
     title: 'Components/TextArea',
-    component: TextArea,
-    argTypes: {
-        color: {
-            control: {
-                type: 'select',
-                options: ['default', 'primary', 'secondary']
-            }
-        },
-        variant: {
-            control: {
-                type: 'select',
-                options: ['outlined', 'text']
-            }
-        }
-    }
+    component: TextArea
 } as Meta
 
 const Template: Story<TextAreaProps> = args => <TextArea { ...args } />
 
 export const Input = Template.bind({})
 Input.args = {
-    value: '',
-    color: 'primary',
-    placeholder: 'Email'
+    label: 'Text area',
+    placeholder: 'Text area input...'
 }

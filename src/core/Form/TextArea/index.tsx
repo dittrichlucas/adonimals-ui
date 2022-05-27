@@ -15,6 +15,7 @@ const TextArea = (props: TextAreaProps): JSX.Element => {
         wrap,
         cols,
         rows,
+        error,
         onChange
     } = props
 
@@ -27,6 +28,7 @@ const TextArea = (props: TextAreaProps): JSX.Element => {
                 id={ id }
                 value= { value }
                 onChange={ onChange }
+                error={ error }
                 placeholder={ placeholder }
                 disabled={ disabled }
                 required={ required }

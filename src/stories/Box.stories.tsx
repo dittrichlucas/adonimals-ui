@@ -85,17 +85,18 @@ export default {
 
 const Template: Story<BoxProps> = args => (
     <Box {...args}>
-        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 1</div>
-        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 2</div>
-        <div style={{ padding: 12, backgroundColor: 'inherit', color: 'white' }}>Item 3</div>
+        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 1</div>
+        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 2</div>
+        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 3</div>
     </Box>
 )
 
-export const Heading = Template.bind({})
-Heading.args = {
+export const BoxElement = Template.bind({})
+BoxElement.args = {
     display: 'flex',
     element: 'div',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    backgroundColor: 'palevioletred'
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    border: '1px solid black'
 }

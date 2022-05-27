@@ -11,7 +11,7 @@ export default {
 
 const Template: Story<AvatarProps> = args => <Avatar {...args} />
 
-export const Image = Template.bind({})
-Image.args = {
+export const Draft = Template.bind({})
+Draft.args = {
     label: 'Username'
 }

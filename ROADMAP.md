@@ -9,7 +9,7 @@
 
 ### MVP
 - [x] Definir nome do projeto
-- [ ] Definir logo
+- [x] Definir logo
 - [x] Definir componentes da primeira release
 - [ ] Criar componentes
     - [ ] Autocomplete
@@ -26,6 +26,7 @@
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [x] TextArea
     - [x] TextField
     - [x] Title
 - [x] Configurar design tokens
@@ -39,16 +40,24 @@
     - [x] Button
     - [ ] Carrousel
     - [x] Checkbox
+    - [x] Colors
+    - [x] Effects
     - [ ] Form
     - [ ] IconButton
+    - [ ] Iconography
+    - [ ] Introduction pages
+    - [ ] Layout
     - [ ] Menu
     - [ ] Radio
     - [ ] RadioGroup
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [ ] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Typography
+    - [ ] Size and spacing
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
     - [x] Avatar
@@ -64,37 +73,43 @@
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [x] TextArea
     - [x] TextField
     - [x] Title
 - [] Criar protótipos no figma
     - [ ] Autocomplete
-    - [ ] Avatar
-    - [ ] Box
+    - [x] Avatar
+    - [x] Box
     - [x] Button
     - [ ] Carrousel
-    - [ ] Checkbox
-    - [ ] Form
+    - [x] Checkbox
+    - [x] Form
     - [ ] IconButton
-    - [ ] Menu
-    - [ ] Radio
+    - [x] Menu
+    - [x] Radio
     - [ ] RadioGroup
-    - [ ] Select
-    - [ ] Slider
+    - [x] Select
+    - [x] Slider
     - [x] Text
-    - [ ] TextField
+    - [ ] TextArea
+    - [x] TextField
     - [x] Title
 
 ### Improvements
 - [ ] Traduzir documentação para inglês
 - [x] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
 - [ ] Melhorias do storybook
-    - [ ] Adicionar logo
+    - [x] Adicionar logo
     - [ ] Utilizar fontes escolhidas para o projeto
     - [ ] Utilizar o tema do projeto
+    - [ ] Editar o canvas
 - [ ] Adicionar validações de pre-commit
     - [ ] Lint
     - [ ] Padronização das mensagens de commit
 - [ ] Adicionar workflows de CI (Github Actions)
+    - [ ] Publicação no npm
+    - [ ] Execução dos testes
+- [ ] Tornar o label do checkbox clicável
 
 ### Links úteis
 - [Color (styled-system)](https://styled-system.com/table/#color)

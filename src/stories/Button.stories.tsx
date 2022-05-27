@@ -30,11 +30,7 @@ export default {
 
 const TemplateRow: Story<ButtonProps> = args => (
     <div style={{ display: 'flex', justifyContent: 'center'}}>
-        <Button {...args}>Default</Button>
-        {/* <Button {...args}>Hover</Button> */}
-        {/* <Button {...args}>Press</Button> */}
-        {/* <Button {...args}>Focus</Button> */}
-        {/* <Button {...args} disabled>Disabled</Button> */}
+        <Button {...args} />
     </div>
 )
 
