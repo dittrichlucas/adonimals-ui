@@ -1,4 +1,4 @@
-import { ChangeEvent, ReactNode } from 'react'
+import { ChangeEvent } from 'react'
 
 import Box from '../../Box'
 import styled from 'styled-components'
@@ -24,12 +24,19 @@ export type StyledTextFieldProps =
         type?: 'text' | 'number' | 'password' | 'email'
         required?: boolean
         placeholder: string
-        prefix?: ReactNode
-        suffix?: ReactNode
+        prefix?: string
+        suffix?: string
         label?: string
         spellCheck?: boolean
         onChange?: (event?: ChangeEvent<HTMLInputElement>) => void
     }
+
+type CustomSpace = {
+    prefixWidth: number,
+    suffixWidth: number
+}
+
+type AdornmentProps = Pick<StyledTextFieldProps, 'label'> & { position: 'left' | 'right' }
 
 export const colorUnion = (props: StyledBoxProps): 'error' | 'disabled' | 'default' => {
     if (props.error) {
@@ -44,6 +51,7 @@ export const colorUnion = (props: StyledBoxProps): 'error' | 'disabled' | 'defau
 }
 
 export const StyledBox = styled(Box)<StyledBoxProps>(({ theme, ...props }) => ({
+    position: 'relative',
     ...space({ theme, ...props }),
     ':focus-within': {
         color: (!props.error && !props.disabled) && theme.colors.primary['900']
@@ -64,8 +72,11 @@ export const StyledBox = styled(Box)<StyledBoxProps>(({ theme, ...props }) => ({
     })({ theme, ...props, color: colorUnion(props) })
 }))
 
-export const StyledTextField = styled('input')<StyledTextFieldProps>(({ theme, ...props }) => ({
-    padding: `${theme.space['spacing-xxs']}px ${theme.space['spacing-xs']}px`,
+export const StyledTextField = styled('input')<StyledTextFieldProps & CustomSpace>(({ theme, ...props }) => ({
+    paddingTop: `${theme.space['spacing-xxs']}px`,
+    paddingBottom: `${theme.space['spacing-xxs']}px`,
+    paddingLeft: props.prefixWidth || theme.space['spacing-xs'],
+    paddingRight: props.suffixWidth || theme.space['spacing-xs'],
     borderRadius: theme.radii[4],
     fontFamily: theme.fonts.fontFamily,
     fontSize: theme.fontSizes[16],
@@ -96,4 +107,20 @@ export const StyledTextField = styled('input')<StyledTextFieldProps>(({ theme, .
             }
         }
     })({ theme, ...props, color: colorUnion(props) })
+}))
+
+export const Adornment = styled('div')<AdornmentProps>(({ theme, label, position }) => ({
+    position: 'absolute',
+    margin: 'auto',
+    paddingTop: label ? theme.space['spacing-sm'] : 0,
+    paddingLeft: theme.space['spacing-xs'],
+    paddingRight: theme.space['spacing-xs'],
+    height: theme.space['spacing-md'],
+    top: 0,
+    bottom: 0,
+    left: position === 'left' ? 0 : ' unset',
+    right: position === 'right' ? 0 : ' unset',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
 }))
