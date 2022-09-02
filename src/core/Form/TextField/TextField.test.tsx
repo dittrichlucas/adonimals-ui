@@ -8,8 +8,6 @@ describe('', () => {
     test('', () => {
         renderWithTheme(
             <TextField
-                variant='outlined'
-                color='default'
                 placeholder='Test'
                 value='Test 1'
                 onChange={ () => { return } }
