@@ -11,6 +11,7 @@ describe('', () => {
             src=''
             label='Username'
             alt=''
+            variant='large'
         />)
         const test = screen.getByText('U')
 

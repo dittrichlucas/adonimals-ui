@@ -10,8 +10,6 @@ describe('', () => {
             <TextArea
                 value='Test 1'
                 label='Test'
-                color='primary'
-                variant='outlined'
                 onChange={ () => { return } }
             />
         )
