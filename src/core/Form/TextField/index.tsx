@@ -1,11 +1,12 @@
-import React, { PropsWithChildren } from 'react'
-import {
-    StyledTextField,
-    StyledTextFieldProps,
-    StyledBox
-} from './style'
+import React, { PropsWithChildren, useEffect, useRef, useState } from 'react'
+
 import Text from '../../Text'
-import Box from '../../Box'
+import {
+    Adornment,
+    StyledBox,
+    StyledTextField,
+    StyledTextFieldProps
+} from './style'
 
 type TextFieldProps = PropsWithChildren<StyledTextFieldProps>
 
@@ -17,34 +18,42 @@ const TextField = (props: TextFieldProps): JSX.Element => {
         onChange,
         placeholder,
         disabled,
-        variant = 'text',
-        color = 'default',
         error,
         prefix,
         suffix,
         label
     } = props
+    const prefixRef = useRef<HTMLDivElement>(null)
+    const suffixRef = useRef<HTMLDivElement>(null)
+    const [prefixWidth, setPrefixWidth] = useState<number>(0)
+    const [suffixWidth, setSuffixWidth] = useState<number>(0)
+
+    useEffect(() => {
+        setPrefixWidth(prefixRef.current?.clientWidth || 0)
+    }, [prefix])
+
+    useEffect(() => {
+        setSuffixWidth(suffixRef.current?.clientWidth || 0)
+    }, [suffix])
 
     return (
         <StyledBox display='flex' flexDirection='column' { ...props }>
-            <Text color='inherit' variant='medium' element='label' htmlFor={ id }>
+            <Text paddingBottom='spacing-xxxs' color='inherit' variant='b2' element='label' htmlFor={ id }>
                 { label }
             </Text>
-            <Box display='flex' flexDirection='row' py='spacing-xxxs' alignItems='center'>
-                { prefix }
-                <StyledTextField
-                    id={ id }
-                    value={ value }
-                    type={ type }
-                    onChange={ onChange }
-                    placeholder={ placeholder }
-                    disabled={ disabled }
-                    variant= { variant }
-                    color={ color }
-                    error={ error }
-                />
-                { suffix }
-            </Box>
+            { !!prefix && <Adornment position='left' ref={ prefixRef } label={ label }>{ prefix }</Adornment> }
+            <StyledTextField
+                id={ id }
+                value={ value }
+                type={ type }
+                onChange={ onChange }
+                placeholder={ placeholder }
+                disabled={ disabled }
+                prefixWidth={ prefixWidth }
+                suffixWidth={ suffixWidth }
+                error={ error }
+            />
+            { !!suffix && <Adornment position='right' ref={ suffixRef } label={ label }>{ suffix }</Adornment> }
         </StyledBox>
     )
 }

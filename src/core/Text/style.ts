@@ -19,9 +19,10 @@ type TextElements =
     | 'span'
 
 type TextVariants =
-    | 'large'
-    | 'medium'
-    | 'small'
+    | 'bb1'
+    | 'b1'
+    | 'bb2'
+    | 'b2'
 
 const createText = (element: TextElements) => styled(element)<BaseTextProps>(({ theme, ...props }) => ({
     fontFamily: theme.fonts.fontFamily,
@@ -30,17 +31,25 @@ const createText = (element: TextElements) => styled(element)<BaseTextProps>(({ 
     ...color({ theme, ...props }),
     ...variant({
         variants: {
-            large: {
-                fontSize: theme.fontSizes[20],
-                lineHeight: theme.lineHeights[24]
-            },
-            medium: {
+            bb1: {
                 fontSize: theme.fontSizes[16],
-                lineHeight: theme.lineHeights[20]
+                lineHeight: theme.lineHeights[24],
+                fontWeight: '600'
             },
-            small: {
+            b1: {
+                fontSize: theme.fontSizes[16],
+                lineHeight: theme.lineHeights[24],
+                fontWeight: '400'
+            },
+            bb2: {
                 fontSize: theme.fontSizes[12],
-                lineHeight: theme.lineHeights[16]
+                lineHeight: theme.lineHeights[20],
+                fontWeight: '600'
+            },
+            b2: {
+                fontSize: theme.fontSizes[12],
+                lineHeight: theme.lineHeights[20],
+                fontWeight: '400'
             }
         }
     })({ theme, ...props })
@@ -52,9 +61,10 @@ const Paragraph = createText('p')
 const Span = createText('span')
 
 export const defaultElement: { [k in TextVariants]: TextElements } = {
-    large: 'p',
-    medium: 'span',
-    small: 'span'
+    bb1: 'p',
+    b1: 'p',
+    bb2: 'span',
+    b2: 'span'
 }
 
 export const textMap: { [k in TextElements]: typeof Caption } = {

@@ -9,7 +9,7 @@
 
 ### MVP
 - [x] Definir nome do projeto
-- [ ] Definir logo
+- [x] Definir logo
 - [x] Definir componentes da primeira release
 - [ ] Criar componentes
     - [ ] Autocomplete
@@ -26,8 +26,10 @@
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [x] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Toggle
 - [x] Configurar design tokens
 - [x] Definir família de fonte
 - [x] Definir paleta de cores
@@ -39,16 +41,25 @@
     - [x] Button
     - [ ] Carrousel
     - [x] Checkbox
+    - [x] Colors
+    - [x] Effects
     - [ ] Form
     - [ ] IconButton
+    - [ ] Iconography
+    - [ ] Introduction pages
+    - [ ] Layout
     - [ ] Menu
     - [ ] Radio
     - [ ] RadioGroup
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [ ] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Typography
+    - [ ] Size and spacing
+    - [ ] Toggle
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
     - [x] Avatar
@@ -64,37 +75,46 @@
     - [ ] Select
     - [ ] Slider
     - [x] Text
+    - [x] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Toggle
 - [] Criar protótipos no figma
     - [ ] Autocomplete
-    - [ ] Avatar
-    - [ ] Box
+    - [x] Avatar
+    - [x] Box
     - [x] Button
     - [ ] Carrousel
-    - [ ] Checkbox
-    - [ ] Form
+    - [x] Checkbox
+    - [x] Form
     - [ ] IconButton
-    - [ ] Menu
-    - [ ] Radio
+    - [x] Menu
+    - [x] Radio
     - [ ] RadioGroup
-    - [ ] Select
-    - [ ] Slider
+    - [x] Select
+    - [x] Slider
     - [x] Text
-    - [ ] TextField
+    - [ ] TextArea
+    - [x] TextField
     - [x] Title
+    - [x] Toggle
 
 ### Improvements
 - [ ] Traduzir documentação para inglês
 - [x] Adicionar novas regras no prettier com base no [flipper-ui](https://github.com/nginformatica/flipper-ui/blob/master/.eslintrc.json)
 - [ ] Melhorias do storybook
-    - [ ] Adicionar logo
+    - [x] Adicionar logo
     - [ ] Utilizar fontes escolhidas para o projeto
     - [ ] Utilizar o tema do projeto
+    - [ ] Editar o canvas
 - [ ] Adicionar validações de pre-commit
     - [ ] Lint
     - [ ] Padronização das mensagens de commit
 - [ ] Adicionar workflows de CI (Github Actions)
+    - [ ] Publicação no npm
+    - [ ] Execução dos testes
+- [ ] Tornar o label do checkbox clicável
+- [ ] Tipar melhor todos os componentes e variáveis
 
 ### Links úteis
 - [Color (styled-system)](https://styled-system.com/table/#color)
@@ -110,3 +130,6 @@
 - [Boas práticas de testes](https://willianjusten.com.br/erros-comuns-com-o-react-testing-library)
 - [Prioridade das queries nos testes](https://testing-library.com/docs/queries/about/#priority)
 - [Design patterns](https://refactoring.guru/pt-br/design-patterns)
+- [Edição de mdx](https://www.reactjunkie.com/css-in-js-storybook-mdx)
+- [Example de como tornar o canvas editável](https://storybook.js.org/docs/react/writing-stories/play-function)
+- [Exemplo de organização do storybook](https://github.com/Codecademy/gamut/tree/main/packages/styleguide/stories)

@@ -32,13 +32,17 @@ export const HiddenCheckbox = styled('input').attrs({ type: 'chekbox' })(() => (
 
 export const StyledCheckbox = styled('div')<{ checked: boolean }>(({ checked, theme }) => ({
     display: 'inline-block',
+    cursor: 'pointer',
     width: theme.radii['16'],
     height: theme.radii['16'],
-    background: checked ? theme.colors.primary['900'] : theme.colors.secondary['900'],
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: checked ? theme.colors.secondary['500'] : theme.colors.greyscale['500'],
+    backgroundColor: checked ? theme.colors.secondary['500'] : theme.colors.transparent,
     borderRadius: theme.radii['4'],
-    transition: 'all 150ms',
+    transition: 'all 400ms ease-in-out',
     [`${HiddenCheckbox}:focus + &`]: {
-        boxShadow: `0 0 0 ${theme.radii['4']} ${theme.colors.primary['700']}`
+        boxShadow: `0 0 0 ${theme.radii['4']} ${theme.colors.primary['900']}`
     },
     [`${Icon}`]: {
         visibility: checked ? 'visible' : 'hidden'

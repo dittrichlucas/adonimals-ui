@@ -11,6 +11,7 @@
         "strictNullChecks": true,
         "moduleResolution": "node",
         "skipLibCheck": true,
+        "keyofStringsOnly": true,
         "types": [
             "node",
             "jest"

@@ -1,0 +1,206 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+import { styled } from '@storybook/theming'
+
+import Box from '../core/Box'
+
+export const StyledDiv = styled.div`
+    font-family: 'Fira Sans';
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+`
+
+export const StyledP = styled.p`
+    font-family: 'Fira Sans';
+    font-size: 12px;
+`
+
+<Meta title="Tokens/↪ Colors"/> 
+
+### Colors
+
+Let's define a story for our `Colors` pallet
+
+<Box element="div" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+    <h5 style={{ margin: "30px 0" }}>Primary</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#FF9500" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FF9F1A" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFAA33" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFB54D" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFBF66" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFCA80" }}>
+            <StyledP>400</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFD599" }}>
+            <StyledP>300</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFDFB3" }}>
+            <StyledP>200</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFEACC" }}>
+            <StyledP>100</StyledP>
+        </StyledDiv>
+    </Box>
+    <h5 style={{ margin: "30px 0" }}>Secondary</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#D6151B", color: "#F8F9FA" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#EA2E34", color: "#F8F9FA" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#ED454B", color: "#F8F9FA" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#EF5D61", color: "#F8F9FA" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F17478" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F48B8E" }}>
+            <StyledP>400</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F6A2A4" }}>
+            <StyledP>300</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F8B9BA" }}>
+            <StyledP>200</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FAD1D1" }}>
+            <StyledP>100</StyledP>
+        </StyledDiv>
+    </Box>
+    <h5 style={{ margin: "30px 0" }}>Greyscale</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#212529", color: "#F8F9FA" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#343A40", color: "#F8F9FA"  }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#495057", color: "#F8F9FA"  }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#6C757D", color: "#F8F9FA"  }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#ADB5BD" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#CED4DA" }}>
+            <StyledP>400</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#DEE2E6" }}>
+            <StyledP>300</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#E9ECEF" }}>
+            <StyledP>200</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F8F9FA" }}>
+            <StyledP>100</StyledP>
+        </StyledDiv>
+    </Box>
+    <h5 style={{ margin: "30px 0" }}>Feedback Warning</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#FFE800" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFEB1F" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FCEC44" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FFF15E" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#FCF17C" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+    </Box>
+       <h5 style={{ margin: "30px 0" }}>Feedback Success</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#2A9D15" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#36CA1C" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#4FE335" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#76EA62" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#9DF08F" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+    </Box>
+       <h5 style={{ margin: "30px 0" }}>Feedback Neutral</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#2C1C97", color: "#F8F9FA" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#3924C2", color: "#F8F9FA" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#5A46DD", color: "#F8F9FA" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#7968E3", color: "#F8F9FA" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#9F93EB" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+    </Box>
+       <h5 style={{ margin: "30px 0" }}>Feedback Error</h5>
+    <Box element="div" style={{ display: 'flex', justifyContent: 'space-between', width: '80%' }}>
+        <StyledDiv style={{ background: "#B42518", color: "#F8F9FA" }}>
+            <StyledP>900</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#E02F1F", color: "#F8F9FA" }}>
+            <StyledP>800</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#E86154", color: "#F8F9FA" }}>
+            <StyledP>700</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#ED8278" }}>
+            <StyledP>600</StyledP>
+        </StyledDiv>
+        <StyledDiv  style={{ background: "#F3ACA5" }}>
+            <StyledP>500</StyledP>
+        </StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+        <StyledDiv></StyledDiv>
+    </Box>
+</Box>

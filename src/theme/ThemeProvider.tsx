@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react'
-import { ThemeProvider as StyledThemeProvider } from 'styled-components'
+
 import defaultTheme from './defaultTheme'
+import { ThemeProvider as StyledThemeProvider } from 'styled-components'
 
 type Props = {
     theme?: typeof defaultTheme

@@ -5,31 +5,15 @@ import TextField from '../core/Form/TextField'
 import { StyledTextFieldProps } from '../core/Form/TextField/style'
 
 export default {
-    title: 'Example/TextField',
-    component: TextField,
-    argTypes: {
-        color: {
-            control: {
-                type: 'select',
-                options: ['default', 'primary', 'secondary']
-            }
-        },
-        variant: {
-            control: {
-                type: 'select',
-                options: ['outlined', 'text']
-            }
-        }
-    }
+    title: 'Components/TextField',
+    component: TextField
 } as Meta
 
 const Template: Story<StyledTextFieldProps> = args => <TextField { ...args } />
 
 export const Input = Template.bind({})
 Input.args = {
-    value: '',
-    color: 'primary',
-    type: 'text',
-    placeholder: 'Email',
-    variant: 'outlined'
+    label: 'Email',
+    type: 'email',
+    placeholder: 'Type your email...'
 }

@@ -1,6 +1,7 @@
 import React from 'react'
-import Text from '../../Text'
+
 import { StyledBox } from '../TextField/style'
+import Text from '../../Text'
 import { StyledTextArea, TextAreaProps } from './style'
 
 const TextArea = (props: TextAreaProps): JSX.Element => {
@@ -14,18 +15,20 @@ const TextArea = (props: TextAreaProps): JSX.Element => {
         wrap,
         cols,
         rows,
+        error,
         onChange
     } = props
 
     return (
         <StyledBox display='flex' flexDirection='column' { ...props }>
-            <Text color='inherit' variant='medium' element='label' htmlFor={ id }>
+            <Text color='inherit' variant='b2' element='label' htmlFor={ id }>
                 { label }
             </Text>
             <StyledTextArea
                 id={ id }
                 value= { value }
                 onChange={ onChange }
+                error={ error }
                 placeholder={ placeholder }
                 disabled={ disabled }
                 required={ required }

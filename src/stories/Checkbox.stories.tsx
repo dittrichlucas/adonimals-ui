@@ -5,7 +5,7 @@ import Checkbox from '../core/Form/Checkbox'
 import { StyledCheckboxProps } from '../core/Form/Checkbox/style'
 
 export default {
-    title: 'Example/Checkbox',
+    title: 'Components/Checkbox',
     component: Checkbox
 } as Meta
 

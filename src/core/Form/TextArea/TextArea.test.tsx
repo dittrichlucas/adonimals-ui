@@ -1,7 +1,8 @@
-import { screen } from '@testing-library/dom'
 import React from 'react'
-import TextArea from '.'
+
 import { renderWithTheme } from '../../../tests/renderWithTheme'
+import { screen } from '@testing-library/dom'
+import TextArea from '.'
 
 describe('', () => {
     test('', () => {

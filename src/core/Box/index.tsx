@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from 'react'
+
 import { BaseBoxProps, boxMap } from './style'
 
 export type BoxProps = PropsWithChildren<BaseBoxProps>

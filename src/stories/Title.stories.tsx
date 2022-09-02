@@ -4,13 +4,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Title, { TitleProps } from '../core/Title'
 
 export default {
-    title: 'Example/Title',
+    title: 'Typography/Title',
     component: Title,
     argTypes: {
         variant: {
             control: {
                 type: 'select',
-                options: ['heading1', 'heading2', 'heading3', 'heading4', 'heading5', 'heading6']
+                options: ['heading1', 'heading2', 'heading3', 'subtitle1', 'subtitle2', 'subtitle3']
             }
         },
         element: {

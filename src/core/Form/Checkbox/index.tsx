@@ -1,7 +1,8 @@
 import React from 'react'
+
 import Box from '../../Box'
 import Text from '../../Text'
-import { Icon, HiddenCheckbox, StyledCheckbox, StyledCheckboxProps } from './style'
+import { HiddenCheckbox, Icon, StyledCheckbox, StyledCheckboxProps } from './style'
 
 const Checkbox = (props: StyledCheckboxProps): JSX.Element => {
     const { id, label, checked, onChange } = props
@@ -14,7 +15,7 @@ const Checkbox = (props: StyledCheckboxProps): JSX.Element => {
                     <polyline points="20 6 9 17 4 12" />
                 </Icon>
             </StyledCheckbox>
-            <Text ml='spacing-xxxs' htmlFor={ id } element='label' variant='medium' color='inherit'>
+            <Text ml='spacing-xxxs' htmlFor={ id } element='label' variant='b2' color='inherit'>
                 { label }
             </Text>
         </Box>

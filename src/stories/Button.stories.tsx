@@ -4,13 +4,13 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import Button, { ButtonProps } from '../core/Button'
 
 export default {
-    title: 'Example/Button',
+    title: 'Components/Button',
     component: Button,
     argTypes: {
         variant: {
             control: {
                 type: 'select',
-                options: ['contained', 'outlined', 'text']
+                label: ['contained', 'outlined']
             }
         },
         size: {
@@ -18,20 +18,25 @@ export default {
                 type: 'select',
                 options: ['small', 'medium', 'large']
             }
+        },
+        color: {
+            control: {
+                type: 'select',
+                options: ['primary', 'secondary']
+            }
         }
     }
 } as Meta
 
 const TemplateRow: Story<ButtonProps> = args => (
-    <div style={ { display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' } }>
-        <Button { ...args } size='small'>Button</Button>
-        <Button { ...args } size='medium'>Button</Button>
-        <Button { ...args } size='large'>Button</Button>
+    <div style={{ display: 'flex', justifyContent: 'center'}}>
+        <Button {...args} />
     </div>
 )
 
 export const Default = TemplateRow.bind({})
 Default.args = {
     children: 'Button',
-    variant: 'outlined'
+    variant: 'outlined',
+    size: 'medium'
 }
