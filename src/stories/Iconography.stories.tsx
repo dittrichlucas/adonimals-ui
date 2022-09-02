@@ -1,19 +1,29 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 
-import Avatar from '../core/Avatar'
-import { AvatarProps } from '../core/Avatar/style'
+import Icon  from '../icons/Icon'
+import icons from '../icons/types'
 
 export default {
     title: 'Tokens/↪ Iconography',
-    component: Avatar
+    component: Icon,
+    argTypes: {
+        name: {
+            control: {
+                type: 'select',
+                options: Object.keys(icons)
+            }
+        }
+    }
 } as Meta
 
-const Template: Story<AvatarProps> = args => <Avatar {...args} />
+const Template: Story = ({ name, color, size }) => <Icon  name={name} color={color} size={size} />
 
 export const Draft = Template.bind({})
 Draft.args = {
-    label: 'Username'
+    size: 24,
+    color: 'grey',
+    name: Object.keys(icons)[0]
 }
 
 /*

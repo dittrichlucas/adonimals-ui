@@ -1,3 +1,5 @@
 dist/*
 node_modules/*
 src/stories/*
+src/icons/assets/components*
+generate-icon-components.js

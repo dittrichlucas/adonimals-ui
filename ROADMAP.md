@@ -29,6 +29,7 @@
     - [x] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Toggle
 - [x] Configurar design tokens
 - [x] Definir família de fonte
 - [x] Definir paleta de cores
@@ -58,6 +59,7 @@
     - [x] Title
     - [ ] Typography
     - [ ] Size and spacing
+    - [ ] Toggle
 - [ ] Adicionar teste para todos os componentes
     - [ ] Autocomplete
     - [x] Avatar
@@ -76,6 +78,7 @@
     - [x] TextArea
     - [x] TextField
     - [x] Title
+    - [ ] Toggle
 - [] Criar protótipos no figma
     - [ ] Autocomplete
     - [x] Avatar
@@ -94,6 +97,7 @@
     - [ ] TextArea
     - [x] TextField
     - [x] Title
+    - [x] Toggle
 
 ### Improvements
 - [ ] Traduzir documentação para inglês
@@ -110,6 +114,7 @@
     - [ ] Publicação no npm
     - [ ] Execução dos testes
 - [ ] Tornar o label do checkbox clicável
+- [ ] Tipar melhor todos os componentes e variáveis
 
 ### Links úteis
 - [Color (styled-system)](https://styled-system.com/table/#color)
@@ -126,3 +131,5 @@
 - [Prioridade das queries nos testes](https://testing-library.com/docs/queries/about/#priority)
 - [Design patterns](https://refactoring.guru/pt-br/design-patterns)
 - [Edição de mdx](https://www.reactjunkie.com/css-in-js-storybook-mdx)
+- [Example de como tornar o canvas editável](https://storybook.js.org/docs/react/writing-stories/play-function)
+- [Exemplo de organização do storybook](https://github.com/Codecademy/gamut/tree/main/packages/styleguide/stories)
