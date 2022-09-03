@@ -1,6 +1,6 @@
 {
     "name": "adonimals-ui",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "React UI toolkit for the web.",
     "main": "dist/index.js",
     "author": "<ld.dittrich@gmail.com>",
