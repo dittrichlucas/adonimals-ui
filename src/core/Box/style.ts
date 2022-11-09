@@ -10,6 +10,8 @@ import {
     FlexboxProps,
     layout,
     LayoutProps,
+    position,
+    PositionProps,
     space,
     SpaceProps
 } from 'styled-system'
@@ -21,6 +23,7 @@ export type BaseBoxProps =
     & FlexboxProps
     & BordersProps
     & BoxShadowProps
+    & PositionProps
     & {
         color?: string,
         element?: BoxElements
@@ -43,7 +46,8 @@ const createBox = (element: BoxElements) => styled(element)<BaseBoxProps>(props 
     ...space(props),
     ...layout(props),
     ...flexbox(props),
-    ...color(props)
+    ...color(props),
+    ...position(props)
 }))
 
 const Header = createBox('header')

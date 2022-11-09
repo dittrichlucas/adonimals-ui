@@ -84,10 +84,52 @@ export default {
 } as Meta
 
 const Template: Story<BoxProps> = args => (
-    <Box {...args}>
-        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 1</div>
-        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 2</div>
-        <div style={{ margin: 15, padding: 12, backgroundColor: 'palevioletred', color: 'white' }}>Item 3</div>
+    <Box {...args} display='flex' flexDirection='column' border='none' height='1000px' marginTop='40px' backgroundColor='lightgreen'>
+        <div 
+            style={{ 
+                overflow: 'hidden',
+                fontFamily: 'monospace',
+                width: '400px',
+                textAlign: 'center',
+                margin: 15,
+                padding: 12,
+                backgroundColor: 'palevioletred',
+                color: 'white',
+                position: 'sticky',
+                top: 0
+            }}
+        >
+            HEADER
+        </div>
+        <div 
+            style={{ 
+                overflow: 'hidden', 
+                fontFamily: 'monospace', 
+                width: '400px', 
+                minHeight: '400px', 
+                textAlign: 'center', 
+                margin: 15, 
+                padding: 12, 
+                backgroundColor: 'blue', 
+                color: 'white' 
+            }}
+        >
+            MAIN CONTENT
+        </div>
+        <div 
+            style={{ 
+                overflow: 'hidden', 
+                fontFamily: 'monospace', 
+                width: '400px', 
+                textAlign: 'center', 
+                margin: 15, 
+                padding: 12, 
+                backgroundColor: 'black', 
+                color: 'white' 
+                }}
+        >
+            FOOTER
+        </div>
     </Box>
 )
 
