@@ -6,8 +6,8 @@
       {
         "shippedProposals": true,
         "loose": true,
-        "useBuiltIns": "entry",
-        "corejs": "2.5.7"
+        "useBuiltIns": "usage",
+        "corejs": 3
       }
     ],
     "@babel/preset-typescript",
